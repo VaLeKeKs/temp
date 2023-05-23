@@ -1,0 +1,642 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%2013.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%2013.files/colorschememapping.xml">
+<style>
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+a:hover{color:red;text-decoration:none;}
+<!--
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.SpellE
+span.GramE
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+ol
+	{ul
+	{-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1> <ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+  <p align=center style='
+text-align:center;line-height:normal'><span class=SpellE><b>Псевдо-классы</b></span></p>
+  <p style='line-height:
+normal'><span class=SpellE>Псевдо-классы</span> используются для создания
+    специальных эффектов для некоторых элементов.</p>
+  <p style='line-height:
+normal'><b>Синтаксис <span class=SpellE>псевдо-классов</span>:</b></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='color:#C00000'>selector:pseudo-class</span></span><span
+style='color:#C00000'> {<span class=SpellE>property</span>: <span class=SpellE>value</span>}</span></p>
+  <p style='line-height:
+normal'>Классы CSS также можно использовать с <span class=SpellE>псевдо-классами</span>:</p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='color:#C00000;'>selector.class:pseudo</span></span><span lang=EN-US style='color:#C00000;
+'>-class {property: value}</span></p>
+  <p style='line-height:
+normal'><b>Анкерные <span class=SpellE>псевдо-классы</span></b></p>
+  <p style='line-height:
+normal'>Различные ссылки, на которые указывает курсор мыши, можно выводить
+    различным образом в поддерживающих CSS браузерах:</p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>a:link {<span class=SpellE>color</span>:
+    #808080<span class=GramE> }</span>     /* <span class=SpellE>непосещенная</span> ссылка*/</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='color:#C00000;'>a:</span></span><span lang=EN-US style='color:#C00000;'>visited {color: #008000 }  /* </span><span
+style='color:#C00000'>посещенная</span><span style='color:#C00000;'> </span><span style='color:#C00000'>ссылка</span><span lang=EN-US
+style='color:#C00000;'> */</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>a:hover {<span class=SpellE>color</span>:
+    #008080<span class=GramE> }</span>   /*
+    курсор мыши указывает на ссылку*/</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='color:#C00000;'>a:</span></span><span lang=EN-US style='color:#C00000;'>active {color: #00FF00 }   /* </span><span
+style='color:#C00000'>выбранная</span><span style='color:#C00000;'> </span><span style='color:#C00000'>ссылка</span><span lang=EN-US
+style='color:#C00000;'>*/</span></p>
+  <p style='line-height:
+normal'><b>Примечания</b>:</p>
+  <p style='line-height:
+normal'>Чтобы <span class=GramE>иметь эффект</span>, a:hover ДОЛЖЕН следовать в
+    определении CSS после a:link и a:visited!!</p>
+  <p style='line-height:
+normal'>Чтобы <span class=GramE>иметь эффект</span>, a:active ДОЛЖЕН следовать
+    в определении CSS после a:hover!!</p>
+  <p style='line-height:
+normal'>Имена <span class=SpellE>псевдо-классов</span> не зависят от регистра
+    символов.</p>
+  <p style='line-height:
+normal'><span class=SpellE><b>Псевдо-классы</b></span><b> и классы CSS</b></p>
+  <p style='line-height:
+normal'><span class=SpellE>Псевдо-классы</span> можно объединять с классами
+    CSS:</p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='color:#C00000;'>a.silver<span class=GramE>:visited</span></span></span><span lang=EN-US
+style='color:#C00000;'> {color: #C0C0C0 }</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>&lt;a
+    class=&quot;silver&quot; <span class=SpellE>href</span>=&quot;index.php&quot;&gt;Silver&lt;/a&gt;</span></p>
+  <p style='line-height:
+normal'>Если ссылка в приведенном выше примере была посещена, она будет
+    выводиться серебряным цветом.</p>
+  <p style='line-height:
+normal'>CSS2 - <span class=SpellE>Псевдо-класс</span><span class=GramE> :</span><span
+class=SpellE>first-child</span> </p>
+  <p style='line-height:
+normal'><span class=SpellE>Псевдо-класс</span><span class=GramE> :</span><span
+class=SpellE>first-child</span> соответствует определенному элементу, который
+    является первым потомком другого элемента.</p>
+  <p style='line-height:
+normal'><b>Примеры</b>:</p>
+  <p style='line-height:
+normal'>В данном примере селектор соответствует любому элементу h1, который
+    является первым потомком элемента <span class=SpellE>div</span>, и делает
+    отступ для первой строки первого параграфа внутри элемента <span class=SpellE>div</span>: </p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='color:#C00000;'>div</span></span><span lang=EN-US style='color:#C00000;'> h1:first-child</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'> <span class=GramE>text-indent:</span>50px</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'>Этот селектор будет соответствовать первому параграфу внутри <span
+class=SpellE>div</span> в следующем коде:</p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;<span class=SpellE>div</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>Первый заголовок в <span class=SpellE>div</span>.</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>Имеет отступ первой строки.</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>Второй заголовок в <span class=SpellE>div</span>.</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>Не имеет отступа.</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;/<span class=SpellE>div</span>&gt;</span></p>
+  <p style='line-height:
+normal'>но он не будет соответствовать параграфу в следующем коде HTML:</p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;<span class=SpellE>div</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;<span class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>Параграф внутри <span class=SpellE>div</span>.</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;/<span class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;h1<span class=GramE>&gt;П</span>ервый
+    заголовок в <span class=SpellE>div</span>.</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>Не имеет отступа.</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;/<span class=SpellE>div</span>&gt;</span></p>
+  <p style='line-height:
+normal'>В данном примере селектор соответствует любому элементу <span
+class=SpellE>strong</span>, который является первым потомком элемента <span
+class=SpellE>div</span>, и задает <span class=SpellE>font-style</span> как <span
+class=SpellE>italic</span> для первого <span class=SpellE>strong</span> внутри
+    элемента <span class=SpellE>div</span>: </p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='color:
+#C00000;'>div:</span></span><span lang=EN-US
+style='color:#C00000;'>first</span></span><span
+lang=EN-US style='color:#C00000;'>-child strong</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='color:#C00000;'>font-style</span></span><span lang=EN-US style='color:#C00000;
+'>: italic</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'>В следующем коде HTML <span class=SpellE>strong</span> является первым
+    потомком элемента <span class=SpellE>div</span><span class=GramE> :</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;<span class=SpellE>div</span><span
+class=GramE>&gt;И</span>зучайте -- &lt;<span class=SpellE>strong</span>&gt;язык
+    программирования&lt;/<span class=SpellE>strong</span>&gt; C++.&lt;/<span
+class=SpellE>div</span>&gt;</span></p>
+  <p style='line-height:
+normal'>В данном примере селектор соответствует любому элементу <span
+class=SpellE>b</span>, который является первым потомком любого элемента, и
+    задает <span class=SpellE>text-decoration</span> как <span class=SpellE>none</span>: </p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='color:#C00000;'>b:</span></span><span lang=EN-US style='color:#C00000;'>first-child</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='color:#C00000;'>text-decoration</span></span><span lang=EN-US style='color:#C00000;
+'>: none</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'>В следующем примере первый элемент <span class=SpellE>b</span> в коде
+    HTML ниже <span class=GramE>является первым потомком параграфа и не</span> будет подчеркиваться. Но второй элемент <span class=SpellE>a</span> в параграфе
+    не является первым потомком параграфа и будет подчеркнут:</p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;<span class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>Посетите &lt;<span class=SpellE>b</span>&gt;<span
+class=SpellE>www.intuit.ru</span>&lt;/<span class=SpellE>b</span>&gt; и выучите
+    CSS!</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>Посетите &lt;<span class=SpellE>b</span>&gt;&lt;<span
+class=SpellE>a</span> <span class=SpellE>href=</span>&quot;http://www.intuit.ru&quot;&gt;www.intuit.ru&lt;/a&gt;&lt;/b&gt;
+    и выучите HTML!</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>&lt;/<span class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE>Псевдо-классы</span></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'><span class=SpellE><b>Псевдо-класс</b></span></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'><b>Назначение</b></p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>active</span></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Добавляет специальный стиль активированному элементу</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>focus</span></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Добавляет специальный стиль элементу, когда элемент находится в
+          фокусе</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>hover</span></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Добавляет специальный стиль элементу, когда указатель мыши находится
+          над элементом</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>link</span></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Добавляет специальный стиль <span class=SpellE>непосещенной</span> ссылке </p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>visited</span></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Добавляет специальный стиль посещенной ссылке </p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>first-child</span></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Добавляет специальный стиль элементу, который является первым
+          потомком некоторого другого элемента</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>lang</span></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Позволяет автору определить используемый в заданном элементе язык </p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Примеры:</b></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как выделить гиперссылку в документе цветом. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a:</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>link {color: #808080}</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a:</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>visited {color: #FFFF00}</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a:</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>hover {color: #00FF00}</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a:</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>active {color: #0000FF}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;&lt;a <span class=SpellE>href</span>=&quot;index.php&quot;&gt;<span
+class=GramE>This</span> is a link&lt;/a&gt;&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ol</span>&gt;&lt;<span class=SpellE>b</span>&gt;Примечание:&lt;/<span
+class=SpellE>b</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;&lt;<span class=SpellE>i</span>&gt;a:hover ДОЛЖЕН
+    следовать в определении CSS после &lt;<span class=SpellE>b</span>&gt;a:link&lt;/b&gt;
+    и</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>  </span><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>&lt;b&gt;a:
+    visited!!&lt;/b&gt;&lt;/<span class=SpellE>i</span>&gt;&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;&lt;<span class=SpellE>i</span>&gt;a:active ДОЛЖЕН
+    следовать в определении CSS после &lt;<span class=SpellE>b</span>&gt;a:hover!!&lt;/b&gt;&lt;/i&gt;&lt;/li&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как определить для гиперссылки другой стиль. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.color<span class=GramE>:link</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #808000}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.color<span class=GramE>:visited</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #008080}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.color<span class=GramE>:hover</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #C0C0C0}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.size<span class=GramE>:link</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #808000}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.size<span class=GramE>:visited</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #008080}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.size<span class=GramE>:hover</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {font-size: 250%}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.background<span class=GramE>:link</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #808000}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.background<span class=GramE>:visited</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #008080}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.background<span class=GramE>:hover</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {background: #C0C0C0}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.family<span class=GramE>:link</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #808000}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.family<span class=GramE>:visited</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #008080}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.family<span class=GramE>:hover</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {font-family: sans-serif}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.line<span class=GramE>:link</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #808000; text-decoration: none}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.line<span class=GramE>:visited</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {color: #008080; text-decoration: none}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a.line<span class=GramE>:hover</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> {text-decoration: line-through}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>style</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>p</span><span class=GramE>&gt;Н</span>аведите курсор мыши на
+    ссылки.&lt;/<span class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>p</span>&gt;&lt;<span class=SpellE>b</span>&gt;&lt;<span
+class=SpellE>a</span> <span class=SpellE>class=</span>&quot;<span class=SpellE>line</span>&quot; <span class=SpellE>href=</span>&quot;<span class=SpellE>index.php</span>&quot;&gt;Меняем
+    оформление текста у ссылки&lt;/<span class=SpellE>a</span>&gt;&lt;/<span
+class=SpellE>b</span>&gt;&lt;/<span class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;&lt;b&gt;&lt;a
+    class=&quot;size&quot; <span class=SpellE>href</span>=&quot;index.php&quot;&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Меняем</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>размер</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>у</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>ссылки</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;&lt;b&gt;&lt;a
+    class=&quot;background&quot; <span class=SpellE>href</span>=&quot;index.php&quot;&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Меняем</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>цвет</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>фона</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>у</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>ссылки</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;&lt;b&gt;&lt;a
+    class=&quot;family&quot; <span class=SpellE>href</span>=&quot;index.php&quot;&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Меняем</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>семейство</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>шрифта</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>у</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>ссылки</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;&lt;b&gt;&lt;a
+    class=&quot;color&quot; <span class=SpellE>href</span>=&quot;index.php&quot;&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Меняем</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>цвет</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>у</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>ссылки</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как можно использовать <span class=SpellE>псевдо-класс</span><span
+class=GramE> :</span><span class=SpellE>first-child</span>. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>a:</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>first-child</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>text-<span class=SpellE>decoration:</span></span></span><span
+class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>underline</span></span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>style</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>p</span><span class=GramE>&gt;П</span>осетите  &lt;<span class=SpellE>a</span> <span
+class=SpellE>href=</span>&quot;http://www.intuit.ru&quot;&gt;Intuit&lt;/a&gt;
+    там много бесплатных курсов&lt;/<span class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>p</span><span class=GramE>&gt;П</span>осетите &lt;<span
+class=SpellE>a</span> <span class=SpellE>href=</span>&quot;http://www.intuit.ru&quot;&gt;Intuit&lt;/a&gt; </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>   там есть бесплатные учебные программы&lt;/<span
+class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как можно использовать <span class=SpellE>псевдо-класса</span><span
+class=GramE> :</span><span class=SpellE>lang</span>. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>b:</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>lang(<span class=SpellE>fr</span>)</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>quotes: &quot;'&quot; &quot;'&quot;</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>p</span>&gt;Просто текст&lt;<span class=SpellE>b</span> <span
+class=SpellE>lang=</span>&quot;<span class=SpellE>fr</span>&quot;&gt;Выделенный
+    текст:&lt;/<span class=SpellE>b</span><span class=GramE>&gt; С</span>ам текст.&lt;/<span
+class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<declaration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="2.xsd">
+    <sender> Yntren </sender>
+    <receiver> Luk Golyb </receiver>
+    <item> belarus </item>
+    <customs_duty> 30.55   </customs_duty>
+    <date>15.02.3118</date>
+</declaration>

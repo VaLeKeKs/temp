@@ -1,0 +1,70 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+			<link rel="stylesheet" type="text/css" href="style/style.css" />
+			<link rel="stylesheet" href="stylef.css" />
+			<title>База данных</title>
+						<style>
+	#so{float: left;
+			margin-right: 30px;}
+	#main_body{height: 930px}
+	#main_column {height: 780px}
+	#navigation_3{height: 70px}
+	#navigation{height: 290px}
+		</style>
+			
+	</head>
+	<body>
+		<script>
+			function ScrollUp(){
+				var t,s;
+				s=document.body.scrollTop||window.pageYOffset;
+				t=setInterval(function(){if(s>0)window.scroll(0,s-=5);else clearInterval(t)},5);
+			}
+			</script>
+			<a href="#top"
+			   onclick="ScrollUp();return!1;"
+			   style="display:block;position:fixed;
+					bottom: 180px;right:30px;
+					width:64px;height:32px;padding:12px 10px 2px;font-size:16px;
+					opacity:0.7;
+					-webkit-border-radius:15px;
+					-moz-border-radius:15px;
+					border-radius:15px"><img src="img/strelkakv.png" width="65" height="65"/></a>
+		<header>
+			<div id="header">
+				<p id="nameOB">БАЗА</p>
+				<p id="nameJ">ДАННЫХ</p>
+			</div>
+		</header>
+				<div id="main_body">
+			<div id="head_main_column">
+				<p id="text7">Поиск выпускника</p>
+			</div>		    
+			<div id="main_column">
+			<label id="viravnivanie" for="stroka">Введите номер группы</label>
+			<input id="input" class="age" placeholder="Введите номер" name="stroka">
+			<button id="knopka">Найти</button>
+				<div id="text_ground_main">												
+				</div>	
+				<table id= "table">
+				</table>	
+				<label class = "oshibka"></label>
+				<br>
+			</div>
+			<!--Разделение основных колонн-->
+			<div id="head_additive_column_4">
+				<p align="center"id="text9">Полезная информация</p>
+			</div>
+			<div id="navigation_4">
+				<p class="nav_3"><b> <a href="https://edu.gov.by/" class="href">Сайт Министерства образования</a></b></p>
+				<p class="nav_3"><b> <a href="https://president.gov.by/ru" class="href">Официальный сайт Президента</a></b></p>
+				<p class="nav_3"><b> <a href="https://bntu.by/" class="href">Белорусский национальный технический университет</a></b></p>
+				<p class="nav_3"><b> <a href="https://bntu.by/faculties/ftug" class="href">Факультет технологий управления и гуманитаризации</a></b></p>
+			</div>
+		<footer>
+		</footer>
+	<script src="script.js"></script>
+	</body>
+</html>

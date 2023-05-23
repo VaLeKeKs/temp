@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<declaration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="1.xsd">
+    <sender> Ola Kovalevich </sender>
+    <receiver> Logan Novach </receiver>
+    <item> Neckchain </item>
+    <customs_duty> 150.55   </customs_duty>
+    <date>05.05.2019 </date>
+</declaration>

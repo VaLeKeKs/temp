@@ -1,0 +1,475 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=Edit-Time-Data href="../../лаба по фреймам.files/editdata.mso">
+<link rel=themeData href="../../лаба по фреймам.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="лаба%20по%20фреймам.files/colorschememapping.xml">
+<style>
+<!--
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.a
+	{font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+-->
+</style>
+</head>
+
+
+<body bgcolor="#CC9966" lang=RU>
+<div class=Section1>
+  <p align=center style='
+text-align:center;line-height:normal'><b><span
+style='font-size:16.0pt'>Лабораторная работа № 4 – Создание сайтов с помощью
+    фреймов </span></b></p>
+  <p style='line-height:
+normal'>Вот мы добрались и до фреймов (frames). Что же это такое и чем они
+    хороши? Фреймы позволяют нам открыть в окне браузера - не один, а одновременно
+    несколько документов (допустим, документ menu.html, который содержит меню,
+    logo.html - документ, который содержит логотип, шапку страницы, и content.html
+    - документ с непосредственным содержанием нашего сайта). </p>
+  <p style='line-height:
+normal'>Т.к. первый документ на сайте, который показывается посетителю это
+    index.html (или вроде него), то пусть он будет фрейм-документом. Создадим
+    документ index.html: </p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'> &lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;title&gt;Хождение
+    по фреймам&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt; </span></p>
+  <p style='line-height:
+normal'>Помните! Фрейм-документ не содержит тэга body, такого обязательного в
+    других случаях. </p>
+  <p style='line-height:
+normal'>Вместо <span lang=EN-US>body</span><span
+lang=EN-US> </span>вставляется тег <span lang=EN-US>frameset</span>:</p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'> &lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;title&gt;Хождение
+    по фреймам&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frameset&gt;&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt; </span></p>
+  <p style='line-height:
+normal'>Прежде, чем что-нибудь предпринимать дальше, надо решить по какому
+    принципу мы будем размещать наши документы, и вообще, какие документы мы будем
+    показывать посетителю одновременно. Расположить мы можем это по-разному, вот
+    для примера четыре варианта из множества возможных:</p>
+  <p style='line-height:
+normal'><img width=399 height=71
+src="лаба%20по%20фреймам.files/image002.jpg" v:shapes="Рисунок_x0020_1"></p>
+  <p style='line-height:
+normal'>При помощи фреймов мы делим браузер на несколько окон, заданного
+    размера, в которых помещаем независимые друг от друга документы. Это нам
+    позволит оставлять некоторую информацию видимой, в то время как другая
+    информация прокручивается или заменяется (так, например, мы будем постоянно
+    видеть в одном окне документ с меню, в другом – документ с нашим логотипом, а в
+    третьем окне у нас будут при нажатии на ссылки в документе меню загружаться
+    разные документы с текстом, картинками и прочим). </p>
+  <p style='line-height:
+normal'>Т.к. документы, которые мы размещаем во фреймах независимые, то
+    соответственно каждый документ может содержать в себе что угодно (и текст, и
+    картинки, и таблицы). </p>
+  <p style='line-height:
+normal'>Итак, сначала создадим такой вариант (предварительно не забудьте
+    создать обычные *.<span lang=EN-US>html</span> документы с логотипом, меню и основным содержанием):</p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;title&gt;Хождение
+    по фреймам&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frameset
+    rows=&quot;100,*,150&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;logo.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;content.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;menu.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p style='line-height:
+normal'>Давайте разберемся, что и для чего. При помощи атрибута rows тэга
+    &lt;frameset&gt; мы указали, что наши фреймы будут расположены горизонтально
+    (рядами). В значении атрибута rows мы прописали высоту каждого фрейма
+    (rows=&quot;100,*,150&quot;). Высота первого фрейма - 100 пикселов, третьего -
+    150, а второй занимает все оставшееся пространство по высоте (это мы указали
+    значком *), - полагаю, здесь должно быть все ясно. </p>
+  <p style='line-height:
+normal'>Тэг frame сообщает броузеру какие же документы у нас будут загружены во
+    фреймах. В нашем случае: в первом фрейме будет загружен - logo.html (документ с
+    логотипом), второй фрейм займет документ с непосредственным содержанием
+    (content.html), а третий - меню. Если вы хотите, чтобы меню было во втором ряду
+    (фрейме), то вам следует поменять его местами с content.html</p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;title&gt;Хождение
+    по фреймам&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frameset
+    rows=&quot;100,*,150&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;logo.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;menu.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;content.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p style='line-height:
+normal'>Посмотрите что у нас получилось. Теперь надо задать новые значения
+    атрибуту rows, чтобы меню у нас снова занимало только 150 пикселов по высоте, а
+    содержание - все остальное:</p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;title&gt;Хождение
+    по фреймам&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frameset
+    rows=&quot;100,150,*&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;logo.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;menu.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;content.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p style='line-height:
+normal'>Теперь замените атрибут rows, на cols:</p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;title&gt;Хождение
+    по фреймам&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frameset
+    cols=&quot;100,150,*&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;logo.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;menu.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;content.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p style='line-height:
+normal'>Итак, атрибут cols говорит нашему браузеру, что наши фреймы будут
+    расположены вертикально (столбцами). Т.е. значения атрибута cols
+    (cols=&quot;100,150,*&quot;) задают уже не высоту, а ширину каждого фрейма.
+    Ширина первого фрейма – 100 пикселов, ширина второго – 150, а третий фрейм
+    занимает по ширине все оставшееся пространство.</p>
+  <p style='line-height:
+normal'>Мы можем расположить наши фреймы горизонтально (рядами) или вертикально
+    (колонками) относительно друг друга, делаем мы это с помощью параметров тэга
+    &lt;frameset&gt; Cols и Rows. Другого способа деления не существует.
+    Одновременно эти параметры использовать нельзя.</p>
+  <p style='line-height:
+normal'>При помощи rows мы разбиваем располагаем фреймы горизонтально (рядами)
+    и задаем какую высоту будет иметь каждый фрейм, при помощи cols располагаем
+    фреймы вертикально (столбцами) и задаем какую ширину будет иметь каждый фрейм.
+    Ширина и высота могут задаваться не только в пикселях, но и в процентах от
+    общей ширины (высоты) окна: </p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frameset
+    cols=&quot;10%,15%,75%&quot;&gt; </span></p>
+  <p style='line-height:
+normal'>Помните, что в сумме это все должно равняться 100%.</p>
+  <p style='line-height:
+normal'>Теперь разберемся, как расположить документы в окне следующим образом:</p><td><img width=155 height=100 src="лаба%20по%20фреймам.files/image003.gif" v:shapes="_x0000_s1031 _x0000_s1032 _x0000_s1033 _x0000_s1034"></td>
+  <table cellpadding=0 cellspacing=0 align=left>
+    <tr>
+      <td width=2 height=6></td>
+    </tr>
+    <tr>
+      <td></td>
+      
+    </tr>
+  </table>
+  <span lang=EN-US>&nbsp;</span>
+  </p>
+  <br clear=ALL>
+  <p style='line-height:
+normal'>
+   </table>
+  </p>
+  <br clear=ALL>
+  <p style='line-height:
+normal'>Мы будем делить окно на ряды. В первом ряду у нас будет располагаться
+    logo.html, а второй ряд мы поделим на два столбца, в которых будут
+    располагаться документы menu.html и content.html.</p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;title&gt;Хождение
+    по фреймам&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frameset
+    rows=&quot;100,*&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;frame
+    src=&quot;logo.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;???&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p style='line-height:
+normal'>Теперь обозначим ряд, разбитый на два столбца:</p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;title&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Хождение</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>по</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>фреймам</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frameset rows=&quot;100,*&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frame src=&quot;logo.html&quot; noresize&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frameset cols=&quot;150,*&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frame src=&quot;menu.html&quot; scrolling=&quot;no&quot;
+    noresize&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frame src=&quot;content.html&quot; noresize&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p style='line-height:
+normal'>С помощью атрибута cols тэга &lt;frameset&gt;&lt;/frameset&gt; мы делим
+    второй ряд на два столбца (первый шириной 150 пикселов, второй по ширине
+    занимает все оставшееся пространство). А тэги &lt;frame&gt;, которые содержит
+    &lt;frameset&gt;&lt;/frameset&gt;, определяют, какие документы будут показаны
+    загружены в вертикальных фреймах во втором ряду (menu.html и content.html).</p>
+  <p style='line-height:
+normal'>Scrolling - атрибут тэга &lt;frame&gt;. Он может принимать несколько
+    значений: no - это значит совсем не будет полосы прокрутки; yes - это значит
+    полоса прокрутки будет всегда; auto - полоса прокрутки появится только тогда,
+    когда она нужна. <span lang=EN-US>S</span>crolling=&quot;auto&quot;,
+    можно не прописывать, т.к. если атрибут scrolling не задан, то полоса прокрутки
+    появится, если она нужна, а если нет - ее не будет. </p>
+  <p style='line-height:
+normal'>Если вы подведете мышку к границе какого-либо фрейма, то увидите, что
+    потянув за нее, вы можете изменить размеры фрейма. Как же запретить вашему
+    посетителю это делать? При помощи атрибута noresize для тэга &lt;frame&gt;.</p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frameset cols=&quot;100,*&quot;
+    border=&quot;0&quot;&gt;</span></p>
+  <p style='line-height:
+normal'>Итак, обратимся к нашему примеру. Нажмите на любую из ссылок. Документ,
+    на который введет ссылка, откроется в том же фрейме, в котором располагается
+    документ с меню. А нам нужно, чтобы он открылся во фрейме с основным
+    содержанием, а меню осталось в нетронутом виде. Как это сделать?</p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;title&gt;Хождение по
+    фреймам&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frameset cols=&quot;100,*&quot;
+    border=&quot;0&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frameset rows=&quot;100,*&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frame src=&quot;logo.html&quot;
+    scrolling=&quot;no&quot; marginwidth=&quot;0&quot;
+    marginheight=&quot;0&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frame src=&quot;menu.html&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;frame src=&quot;content.html&quot;
+    name=&quot;window-1&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/frameset&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/html&gt;</span></p>
+  <p style='line-height:
+normal'>Параметр name задает уникальное имя для фрейма (в нашем случае для
+    того, который содержит документ content.html). </p>
+  <p style='line-height:
+normal'>Имя фрейма может быть в дальнейшем использовано для ссылки на него из
+    других документов (фреймов), с помощью атрибута тэга &lt;a&gt; target
+    (target=&quot;имя_фрейма&quot;), с которым мы, кстати, тоже уже знакомы. </p>
+  <p style='line-height:
+normal'>Введем атрибут target в документе со ссылками - menu.html.</p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;title&gt;Документ с
+    Меню&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body
+    background=&quot;cherti3.gif&quot; text=&quot;#ffffff&quot;
+    link=&quot;#ffffff&quot; alink=&quot;#ffffff&quot;
+    vlink=&quot;#ffffff&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;center&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;a href=&quot;content.html&quot;
+    target=&quot;window-1&quot;&gt;Главная&lt;/a&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;a href=&quot;tumki.html&quot;
+    target=&quot;window-1&quot;&gt;Тумки&lt;/a&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;a href=&quot;bumki.html&quot;
+    target=&quot;window-1&quot;&gt;Бумки&lt;/a&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;a href=&quot;tururumki.html&quot;
+    target=&quot;window-1&quot;&gt;Турурумки&lt;/a&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;a href=&quot;tra-la-la.html&quot;
+    target=&quot;window-1&quot;&gt;Траляля&lt;/a&gt; </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/center&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/html&gt;</span></p>
+  <p style='line-height:
+normal'>Теперь, все ссылки открываются в нужном нам фрейме.</p>
+  <p style='line-height:
+normal'>Бывают ситуации, когда нам нужно, чтобы открываемый документ открылся во
+    все окно, для этого надо параметру target задать значение _top: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;a href=&quot;project.html&quot;
+    target=&quot;_top&quot;&gt;Мой проект о рыбках&lt;/a&gt;</span></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b><span
+style='font-size:14.0pt'>Задание</span></b></p>
+  <p style='line-height:
+normal'>Сделать html-документ фреймами в таком виде:</p>
+  <table cellpadding=0 cellspacing=0 align=left>
+    <tr>
+      <td width=6 height=6></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><img width=140 height=85 src="лаба%20по%20фреймам.files/image005.gif"
+  v:shapes="_x0000_s1043 _x0000_s1044 _x0000_s1045 _x0000_s1046"></td>
+    </tr>
+  </table>
+  </p>
+</div>
+</body>
+</html>

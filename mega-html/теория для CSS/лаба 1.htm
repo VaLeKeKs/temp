@@ -1,0 +1,1037 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=Edit-Time-Data href="лаба%201.files/editdata.mso">
+<link rel=themeData href="лаба%201.files/themedata.thmx">
+<link rel=colorSchemeMapping href="лаба%201.files/colorschememapping.xml">
+<style>
+<!--
+h1
+	{line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{text-align:justify;
+	text-indent:27.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.a
+	{font-family:"Tahoma","sans-serif";}
+span.a0
+	{font-family:"Times New Roman","serif";
+	color:black;}
+span.1
+	{font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.SpellE
+span.GramE
+.MsoChpDefault
+ol
+	{ul
+	{-->
+</style>
+</head>
+<body bgcolor="#CC9966" link=blue vlink=purple lang=RU>
+
+<div class=Section1>
+  <p align=center style='text-align:center'><b><span style='font-size:16.0pt;line-height:115%'>Применение </span></b><b><span
+lang=EN-US style='font-size:16.0pt;line-height:115%;'>CSS</span></b></p>
+  <p>Таблица стилей состоит из набора
+    правил. Каждое правило, в свою очередь, состоит из одного или нескольких
+    селекторов, разделённых запятыми, и блока определений. Блок определений же
+    обрамляется фигурными скобками, и состоит из набора свойств и их значений.</p>
+  <p><img width=350 height=192
+src="лаба%201.files/image001.gif" v:shapes="Рисунок_x0020_1"></p>
+  <p align=center style='text-align:center'><b>Применение </b><b><span lang=EN-US>CSS</span> к </b><b><span lang=EN-US>HTML</span>-документу</b></p>
+  <p>Есть 3  способа
+    применить правила <span lang=EN-US>CSS</span> к <span lang=EN-US>HTML</span>-документу:
+    внутренний и внешний и непосредственно в элементе:</p>
+  <p><b>Внутренний (тэг <span
+class=SpellE>style</span>)</b></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New"'>&lt;</span><span lang=EN-US
+style='font-family:"Courier New";'>html</span><span
+style='font-family:"Courier New"'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New"'>  &lt;</span><span lang=EN-US style='font-family:
+&quot;Courier New&quot;;'>head</span><span style='font-family:
+&quot;Courier New&quot;'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New"'>    </span><span lang=EN-US style='font-family:
+&quot;Courier New&quot;;'>&lt;<span class=GramE>title&gt;</span>Example&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><b><span lang=EN-US
+style='font-family:"Courier New";'>    </span></b><span lang=EN-US
+style='font-family:"Courier New";color:red;'>&lt;style
+    type=&quot;text/<span class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";color:red;'>      <span class=GramE>body</span> {background-color: #FF0000;}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";color:red;'>    &lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><b><span lang=EN-US
+style='font-family:"Courier New";'>  </span></b><span lang=EN-US style='font-family:
+&quot;Courier New&quot;;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>  &lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>    &lt;p&gt;<span class=GramE>This</span> is a red page&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>  </span><span style='font-family:
+&quot;Courier New&quot;'>&lt;/<span class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New"'>&lt;/<span class=SpellE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span class=GramE><b>Внешний</b></span><b> (ссылка на таблицу стилей)</b></p>
+  <p style='line-height:
+normal'>Внешняя таблица стилей это просто текстовый файл с расширением .<span
+class=SpellE>css</span>. Вы можете поместить таблицу стилей на ваш web-сервер
+    или на жёсткий диск, как и другие файлы.</p>
+  <p style='line-height:
+normal'>Тогда нужно создать ссылку из HTML-документа (default.htm) на таблицу
+    стилей (<span class=SpellE>style.css</span>). Это можно сделать одной строчкой
+    HTML-кода:</p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New"'>&lt;</span><span lang=EN-US
+style='font-family:"Courier New";'>html</span><span
+style='font-family:"Courier New"'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New"'>  &lt;</span><span lang=EN-US style='font-family:
+&quot;Courier New&quot;;'>head</span><span style='font-family:
+&quot;Courier New&quot;'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New"'>    &lt;</span><span lang=EN-US
+style='font-family:"Courier New";'>title</span><span
+style='font-family:"Courier New"'>&gt;</span><span lang=EN-US style='font-family:
+&quot;Courier New&quot;;'>My</span><span lang=EN-US
+style='font-family:"Courier New"'> </span><span lang=EN-US style='font-family:
+&quot;Courier New&quot;;'>document</span><span style='font-family:
+&quot;Courier New&quot;'>&lt;/</span><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+'>title</span><span style='font-family:"Courier New"'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New";color:red'>&lt;</span><span
+lang=EN-US style='font-family:"Courier New";color:red;'>link</span><span
+lang=EN-US style='font-family:"Courier New";color:red'> </span><span
+class=SpellE><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:red;
+'>rel</span></span><span style='font-family:&quot;Courier New&quot;;
+color:red'>=&quot;</span><span class=SpellE><span lang=EN-US style='font-family:
+&quot;Courier New&quot;;color:red;'>stylesheet</span></span><span
+style='font-family:"Courier New";color:red'>&quot; </span><span lang=EN-US
+style='font-family:"Courier New";color:red;'>type</span><span
+style='font-family:"Courier New";color:red'>=&quot;</span><span lang=EN-US
+style='font-family:"Courier New";color:red;'>text</span><span
+style='font-family:"Courier New";color:red'>/</span><span class=SpellE><span
+lang=EN-US style='font-family:"Courier New";color:red;'>css</span></span><span
+style='font-family:"Courier New";color:red'>&quot; </span><span class=SpellE><span
+lang=EN-US style='font-family:"Courier New";color:red;'>href</span></span><span
+style='font-family:"Courier New";color:red'>=&quot;</span><span lang=EN-US
+style='font-family:"Courier New";color:red;'>style</span><span
+style='font-family:"Courier New";color:red'>/</span><span lang=EN-US
+style='font-family:"Courier New";color:red;'>style</span><span
+style='font-family:"Courier New";color:red'>.</span><span class=SpellE><span
+lang=EN-US style='font-family:"Courier New";color:red;'>css</span></span><span
+style='font-family:"Courier New";color:red'>&quot; /&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New"'>  </span><span lang=EN-US style='font-family:
+&quot;Courier New&quot;;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>  &lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>  ...</span></p>
+  <p style='line-height:
+normal'><b>Непосредственно в </b><b><span lang=EN-US>html-</span>документе</b></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>  &lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>    &lt;<span class=GramE>title&gt;</span>My
+    document&lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New";color:#C00000'>&lt;</span><span
+lang=EN-US style='font-family:"Courier New";color:#C00000;'>p</span><span lang=EN-US style='font-family:"Courier New";color:#C00000'> </span><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>style</span><span style='font-family:&quot;Courier New&quot;;
+color:#C00000'>=&quot;</span><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>font</span><span style='font-family:
+&quot;Courier New&quot;;color:#C00000'>-</span><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>size</span><span style='font-family:
+&quot;Courier New&quot;;color:#C00000'>: 21</span><span class=SpellE><span lang=EN-US
+style='font-family:"Courier New";color:#C00000;'>px</span></span><span
+style='font-family:"Courier New";color:#C00000'>; </span><span class=SpellE><span
+lang=EN-US style='font-family:"Courier New";color:#C00000;'>color</span></span><span style='font-family:"Courier New";color:#C00000'>: </span><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>green</span><span style='font-family:&quot;Courier New&quot;;
+color:#C00000'>;&quot;&gt;Рассказ о том, как вредно красить батареи&lt;/</span><span
+lang=EN-US style='font-family:"Courier New";color:#C00000;'>p</span><span style='font-family:"Courier New";color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>  &lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:"Courier New";'>  ...</span></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Селекторы</b><b><span lang=EN-US> (Selectors):</span></b></p>
+  <p style='line-height:
+normal'><span class=SpellE>Синтаксисис</span><span lang=EN-US>:</span></p>
+  <p style='line-height:
+normal'><i>селектор {свойства} </i></p>
+  <p style='line-height:
+normal'>Любой элемент <span lang=EN-US>HTML</span> - это возможный <span lang=EN-US>CSS</span> селектор. Свойства селектора определяют стиль элемента, для которого он
+    определен. </p>
+  <p style='line-height:
+normal'><span lang=EN-US>ПРИМЕР: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>H1 {<span class=SpellE>color<span class=GramE>:red</span></span>;
+    size:20pt;}</span></p>
+  <p style='line-height:
+normal'>Все элементы <span lang=EN-US>H</span>1
+    в документе будут красного цвета, размером в 20 точек (<span lang=EN-US>pt</span>, <span lang=EN-US>point</span>). </p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Классовые
+    селекторы (</b><b><span lang=EN-US>Class</span><span lang=EN-US> </span></b><b><span lang=EN-US>Selectors</span>):</b></p>
+  <p style='line-height:
+normal'>Синтаксис:</p>
+  <p style='line-height:
+normal'><span class=SpellE><i>селектор<span
+class=GramE>.к</span>ласс</i></span><i> {</i><i><span lang=EN-US>c</span><span class=SpellE>войства</span>} </i></p>
+  <p style='line-height:
+normal'>Используя селекторы классов, можно к одному и тому же элементу
+    применять разные стили. В <span lang=EN-US>CSS</span> можно описать собственные стили для различных классов одних и тех же элементов. </p>
+  <p style='line-height:
+normal'><span lang=EN-US>ПРИМЕР: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>H1.blue {<span class=SpellE>color<span class=GramE>:blue</span></span>;
+    size:20pt;}</span></p>
+  <p style='line-height:
+normal'>Все элементы <span lang=EN-US>H</span>1
+    с атрибутом <span lang=EN-US>CLASS</span>=&quot;<span
+lang=EN-US>blue</span>&quot; станут синими. </p>
+  <p style='line-height:
+normal'>Классы могут так же быть описаны без явного привязывания их к
+    определенным элементам. </p>
+  <p style='line-height:
+normal'>Синтаксис:</p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>.класс {свойства} </span></p>
+  <p style='line-height:
+normal'>ПРИМЕР: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>.green {color:green;}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Courier New"'>В данном случае все элементы с
+    атрибутом </span><span lang=EN-US style='font-family:"Courier New";'>CLASS</span><span style='font-family:"Courier New"'>=&quot;</span><span
+lang=EN-US style='font-family:"Courier New";'>green</span><span
+style='font-family:"Courier New"'>&quot; станут зелеными.</span></p>
+  <p style='line-height:
+normal'><b>Рассмотрим</b><b> пример</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;HTML&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;HEAD&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;STYLE TYPE=&quot;text/<span class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;!--</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> <span
+class=SpellE>p.one</span> {background-color: #D6D2DD; font-style: regular;
+    font-size: <span class=GramE>15;</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> <span
+class=SpellE>p.two</span> {background-color: #D1DED7; font-style: bold;
+    font-size: <span class=GramE>20;</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> <span
+class=SpellE>p.three</span> {background-color: #DDD8D2; font-style: italic;
+    font-size: <span class=GramE>25;</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>--&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/STYLE&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/HEAD&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;BODY&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;P <span
+class=SpellE>class=</span>&quot;<span class=SpellE>one</span>&quot;&gt;CSS
+    имеет очень простой синтаксис, но открывает нам новые грани, недоступные при
+    стандартной HTML-верстке.</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;P <span
+class=SpellE>class=</span>&quot;<span class=SpellE>two</span>&quot;&gt;Зная
+    CSS, вы сможете создать по-настоящему красивый сайт.</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;P <span
+class=SpellE>class=</span>&quot;<span class=SpellE>three</span>&quot;&gt; Не
+    забывайте просматривать другие ресурсы по CSS.</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/BODY&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/HTML&gt; </span></p>
+  <p class=MsoBodyTextIndent><span style='font-size:
+12.0pt;color:windowtext'>Как видите, в данном случае описываемый элемент
+    разделен на 2 сектора: <span class=SpellE>тэг<span class=GramE>.и</span>мя-класса</span>.
+    У каждого класса есть свои свойства, которые вы задаете в фигурных скобках. Для
+    того чтобы CSS вступили в действие, необходимо вызвать класс в тэге, который вы
+    описывали. Делается это с помощью атрибута <span class=SpellE>class=</span>”<span
+class=SpellE><span class=GramE>имя-класса</span></span>”. Это очень удобный
+    способ, который применяется <span class=GramE>почти повсеместно</span>. </span></p>
+  <p class=MsoBodyTextIndent><span style='font-size:
+12.0pt;color:windowtext'>Иногда возникают случаи, когда требуется создать
+    класс, не привязанный к определенному тэгу. В предыдущем случае имя .<span
+class=SpellE>one</span> принадлежало элементу P, но такая ситуация не всегда
+    приемлема. В этих случаях определение тэга нужно опустить. Взгляните на пример:</span></p>
+  <div class=MsoBodyTextIndent align=center style='text-align:center;'><span style='font-size:12.0pt;color:windowtext'>
+    <hr size=1 width="100%" noshade style='color:#81A5C9' align=center>
+    </span></div>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;STYLE&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> .one {color: <span
+class=GramE>green;</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> .two {color: <span
+class=GramE>blue;</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/STYLE&gt;</span></p>
+  <p class=MsoBodyTextIndent><span style='font-size:
+12.0pt;color:windowtext'>После объявления стилей, их необходимо вызвать. В
+    нашем случае, классы становятся очень гибкими, и вызывать их можно в любом тэге
+    с атрибутом <span class=SpellE>class=</span>”…”. К примеру:</span></p>
+  <div class=MsoBodyTextIndent align=center style='text-align:center;'><span style='font-size:12.0pt;color:windowtext'>
+    <hr size=1 width="100%" noshade style='color:#81A5C9' align=center>
+    </span></div>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;HTML&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;HEAD&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;STYLE TYPE=&quot;text/<span class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> .one {color: <span
+class=GramE>green;</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> .two {color: <span
+class=GramE>blue;</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/STYLE&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;/HEAD&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;BODY&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;<span
+class=SpellE>Div</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>one</span>&quot;&gt;Текст, написанный зеленым цветом.</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;P <span
+class=SpellE>class=</span>&quot;<span class=SpellE>two</span>&quot;&gt;Абзац,
+    написанный синим цветом.</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;HR class=&quot;one&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'> &lt;/BODY&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/HTML&gt;</span></p>
+  <p style='line-height:
+normal'><img width=304 height=250
+src="лаба%201.files/image003.jpg" v:shapes="Рисунок_x0020_7"></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b><span
+lang=EN-US>ID <span class=SpellE>селекторы</span> (ID Selectors):</span></b></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+'>Cинтакс</span></span><span lang=EN-US
+style='font-family:"Courier New";'>:</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>#id {свойства} </span></p>
+  <p style='line-height:
+normal'>Особенностью атрибутов типа ID является то, что они могут иметь одно
+    значение; независимо от языка документа, атрибут ID может использоваться для
+    уникальной идентификации элемента. <span class=GramE><span lang=EN-US>C</span> его помощью можно создавать
+    стилистические исключения <span lang=EN-US>c</span><span
+class=SpellE>реди</span> элементов одного класса.</span> </p>
+  <p style='line-height:
+normal'><span class=SpellE>Индификаторы</span> используются в основном для
+    придания одному или нескольким элементам одного класса индивидуальных свойств.
+    Скажем, Вы создали класс <span lang=EN-US>blue</span> - синий курсив. Но Вам <span class=GramE>понадобился жирный подчеркнутый текст
+    синим</span> курсивом. Конечно, можно создать новый класс, но зачем? Проще
+    описать <span lang=EN-US>ID</span>. Например
+    &quot;<span class=SpellE><span lang=EN-US>boldunderline</span></span>&quot;.
+    И все элементы класса <span lang=EN-US>blue</span> <span class=GramE>с</span> значением <span lang=EN-US>ID</span> &quot;<span class=SpellE><span lang=EN-US>boldunderline</span></span>&quot; станут жирным подчеркнутым синим
+    курсивом. Произойдет как бы синтез свой<span class=GramE>ств кл</span>асса <span
+lang=EN-US>blue</span> и идентификатора <span
+class=SpellE><span lang=EN-US>boldunderline</span></span>. </p>
+  <p style='line-height:
+normal'><span lang=EN-US>ПРИМЕР: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>title</span>&gt; <span
+class=SpellE>Пример</span> CSS &lt;/title&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>style</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>.blue {<span class=SpellE>color<span class=GramE>:blue</span></span>;
+    font-<span class=SpellE>style:italic</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>#<span class=SpellE>boldunderline</span> {text-<span
+class=SpellE>decoration<span class=GramE>:underline</span></span>; font-<span
+class=SpellE>weight:bold</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;p class=&quot;blue&quot;&gt; Здравствуйте, это моя
+    домашняя страница. &lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;p class=&quot;blue&quot; id=&quot;<span
+class=SpellE>boldunderline</span>&quot;&gt; Пока еще в стадии разработки ...
+    &lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;p id=&quot;<span class=SpellE>boldunderline</span>&quot;&gt;...
+    Но скоро откроется &lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/html&gt;</span></p>
+  <p style='line-height:
+normal'><span class=GramE>Как видно из примера, атрибут <span lang=EN-US>ID</span> может быть использован без указания
+    класса (последний параграф примера.</span> Тогда параграф будет обладать только
+    свойствами <span lang=EN-US>ID</span> &quot;<span
+class=SpellE><span lang=EN-US>boldunderline</span></span>&quot;
+    (в примере - жирный, подчеркнутый текст).</p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Придание
+    нескольким элементам одинаковых свойств:</b></p>
+  <p style='line-height:
+normal'>Скажем Вам нужно придать нескольким элементам Вашей <span class=SpellE>веб</span> страницы одинаковых свойств. В этом случае при определении селекторы перечисляются
+    через запятую перед блоком свойств. </p>
+  <p style='line-height:
+normal'>ПРИМЕР: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>h1<span class=GramE>,h2,h3,p,strong</span> {<span
+class=SpellE>color:green</span>; font-<span class=SpellE>style:italic</span>;}</span></p>
+  <p style='line-height:
+normal'>Все элементы <span lang=EN-US>h</span>1, <span lang=EN-US>h</span>2, <span lang=EN-US>h</span>3, <span lang=EN-US>p</span> и <span lang=EN-US>strong</span> будут зелеными.</p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Форматирование
+    содержимого</b></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Свойства
+    шрифта</b></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>font-style</i></span> – начертание шрифта: '<span class=SpellE>italic</span>' – курсив, '<span
+class=SpellE>oblique</span>' – наклонный (это одно и то же, но в некоторых
+    шрифтах может по-разному называться) и <span class=SpellE>normal</span> –
+    обычный (он же <span class=SpellE>roman</span> или <span class=SpellE>upright</span>). </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>font-variant</i></span> – регистр символов: <span class=SpellE>normal</span> – обычный, <span
+class=SpellE>small-caps</span> – малые прописные (поддерживается только <span
+class=SpellE>Internet</span> <span class=SpellE>Explorer</span>) </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>font-weight</i></span> – толщина шрифта: <span class=SpellE>normal</span> – <span class=GramE>обычный</span>, <span class=SpellE>lighter</span> – более тонкий, чем определен для стиля, <span
+class=SpellE>bold</span> – жирный и <span class=SpellE>bolder</span> – жирнее,
+    чем определен для стиля. Так же возможны варианты 100, 200, 300, 400, 500, 600,
+    700, 800, 900, где 400 соответствует нормальной толщине. <span class=GramE>При
+    этом возможность менять степень жирности шрифта зависит от самого шрифта и,
+    если в нем предусмотрен только обычный и полужирный, то никакого жирного и
+    среднего из него не сделать. </span></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>font-size</i></span> – размер шрифта в пунктах (<span class=SpellE>pt</span>), миллиметрах (<span
+class=SpellE>mm</span>), пикселях (<span class=SpellE>рх</span>), относительных
+    величинах (<span class=SpellE>em</span>) или процентах<span class=GramE> (%) </span>от
+    стандартного размера. Так же допустимы значения: <span class=SpellE>xx-small</span> и <span class=SpellE>x-small</span> – самые маленькие, <span class=SpellE>small</span> – маленький, <span class=SpellE>medium</span> – средний, <span class=SpellE>large</span> – большой, <span class=SpellE>x-large</span> и <span class=SpellE>xx-large</span> – самые большие; <span class=SpellE>smaller</span> – меньше указанного и <span
+class=SpellE>larger</span> – больше указанного. Например<span lang=EN-US>: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>P {font-size: <span class=GramE>12pt;</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>BLOCKQUOTE {font-size: larger}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>EM {font-size: 150%}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>EM {<span class=SpellE>font-size</span>: 1.5em}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>font-family</i></span> – определяет перечень предпочитаемых для данного элемента шрифтов, перечисленных
+    через запятую. Указание перечня имеет смысл для корректного подбора заменяющего
+    шрифта, если предпочитаемый не найден. Например: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>BODY {<span class=SpellE>font-family</span>: <span
+class=SpellE>gill</span>, <span class=SpellE>helvetica</span>, <span
+class=SpellE>sans-serif</span>}</span></p>
+  <p style='line-height:
+normal'>Вместо настоящего шрифта может указываться тип<span lang=EN-US>: serif – </span>шрифт с засечками типа<span lang=EN-US> Times,
+    sans-serif – </span>шрифт без засечек типа<span lang=EN-US> Helvetica </span>или<span
+lang=EN-US> Arial, cursive – </span>шрифт<span
+lang=EN-US>, </span>имитирующий рукописный ввод типа<span
+lang=EN-US> Zapf-Chancery </span>или<span
+lang=EN-US> <span class=SpellE>Kursiv</span> 95, fantasy – </span>тип<span lang=EN-US> Western, <span class=SpellE>monospace</span> – </span><span class=SpellE>моноширинный</span> шрифт типа<span lang=EN-US> Courier. </span>Если
+    имя шрифта содержит пробел, оно должно заключатся в кавычки. Например: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;BODY STYLE=&quot;<span class=SpellE>font-family</span>:
+    '<span class=SpellE>My</span> <span class=SpellE>own</span> <span class=SpellE>font</span>', <span class=SpellE>fantasy</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE>font</span> – позволяет установить название шрифта,
+    его размер и величину междустрочного интервала (через дробь) и другие
+    параметры. Применяется вместо указания отдельных атрибутов. Например: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>P {<span class=SpellE>font</span>: <span class=SpellE>bold</span> <span class=SpellE>italic</span> <span class=SpellE>large</span>/120% <span
+class=SpellE>Helvetica</span>, <span class=SpellE>serif</span>}</span></p>
+  <p style='line-height:
+normal'>Компактность такой записи указывает на предпочтительность ее применения
+    во всех случаях, где не может возникнуть разночтения значения <span
+class=SpellE>Normal</span>. </p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Цвета
+    и рисунки</b></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>color</i></span> – цвет символов. Указываться тремя способами: </p>
+  <p style='line-height:
+normal'>В 16-ти цветной палитре: <span class=SpellE><span class=GramE>Black</span></span><span
+class=GramE> (Черный), <span class=SpellE>Gray</span> (Серый), <span
+class=SpellE>Silver</span> (Серебро – светло-серый), <span class=SpellE>White</span> (Белый), <span class=SpellE>Maroon</span> (Темно-бордовый), <span class=SpellE>Red</span> (Красный), <span class=SpellE>Purple</span> (Фиолетовый), <span class=SpellE>Fuchsia</span> (Фуксия – <span class=SpellE>розовый</span>), <span class=SpellE>Green</span> (Зеленый), <span class=SpellE>Lime</span> (Известь – салатный), <span
+class=SpellE>Olive</span> (Оливковый), <span class=SpellE>Yellow</span> (Желтый), <span class=SpellE>Navy</span> (Темно-синий), <span class=SpellE>Blue</span> (<span class=SpellE>Откровенно-голубой</span> O), <span class=SpellE>Teal</span> (Чирок – темный сине-зеленый), и <span class=SpellE>Aqua</span> (<span
+class=SpellE>Аква</span> – светлый сине-зеленый). </span></p>
+  <p style='line-height:
+normal'>Взятым в кавычки 16-ти битным кодом цвета, например
+    &quot;#FF0000&quot;. Запись кода может быть сокращена до трех символов,
+    обозреватели расширят его, удваивая каждый из них, превращая, например,
+    &quot;#F00&quot; в &quot;#FF0000&quot;. </p>
+  <p style='line-height:
+normal'>Указанием, с помощью атрибута RGB, что цвет определяется соотношением
+    красного, зеленого и синего и, указанием этого соотношения в скобках, например: <span class=SpellE>rgb</span>(255,0,0). Вместо абсолютной величины, при этом,
+    может задаваться величина в процентах, где за 100% принято значение 255. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>background-color</i></span> – цвет фона. Может быть <span class=SpellE>transparent</span> – прозрачный или
+    указываться так же, как цвет символов. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>background-image</i></span> – фоновый рисунок. Либо <span class=SpellE>none</span> – нет, либо <span
+class=SpellE>url</span>(адрес рисунка). Например<span lang=EN-US>: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>BODY {background-image: <span class=SpellE><span
+class=GramE>url</span></span><span class=GramE>(</span>marble.gif)}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>P {background-image: none}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>background-repeat</i></span> – повторение фонового рисунка для заполнения страницы: <span class=SpellE>repeat</span> – допускается повторение, <span class=SpellE>repeat-x</span> – заполнение
+    только по горизонтали, <span class=SpellE>repeat-y</span> – заполнение только
+    по вертикали, <span class=SpellE>no-repeat</span> – нет повторения. Допускается
+    опускание имени свойства, с указанием только его значения. Например: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>BODY {background-image: <span class=SpellE><span
+class=GramE>url</span></span><span class=GramE>(</span>marble.gif) no-repeat}</span></p>
+  <p style='line-height:
+normal'><span class=GramE><i><span
+lang=EN-US>background-attachment</span></i></span><span
+lang=EN-US> – </span>прокрутка фонового рисунка<span lang=EN-US>. </span>Либо <span class=SpellE>scroll</span> – прокрутка разрешена, и рисунок перемещается
+    вместе с текстом, либо <span class=SpellE>fixed</span> – рисунок расположен
+    неподвижно и текст перемещается относительно рисунка. Допускается опускание
+    имени свойства, с указанием только его значения. Например: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>BODY {background-image: <span class=SpellE><span
+class=GramE>url</span></span><span class=GramE>(</span>marble.gif) fixed}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>background-position</i></span> – позиция фонового рисунка. </p>
+  <p style='line-height:
+normal'>Либо определяется в процентах от размера окна, отсчитываясь с левого
+    верхнего угла, например: {10%,20%} где первая цифра указывает отступ слева, а
+    вторая отступ сверху, либо в сантиметрах: {10cm,20cm}. </p>
+  <p style='line-height:
+normal'>Либо фиксируется по краям или центру: <span class=SpellE>top</span> –
+    по верху, <span class=SpellE>bottom</span> – по нижнему краю, <span
+class=SpellE>left</span> – влево, <span class=SpellE>center</span> – по центру, <span class=SpellE>right</span> – вправо. </p>
+  <p style='line-height:
+normal'>Допускается комбинация определений и опускание имени свойства, указывая
+    только его значение: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>BODY {background-image: <span class=SpellE><span
+class=GramE>url</span></span><span class=GramE>(</span>marble.gif) center <span
+class=SpellE>center</span>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>BODY {background-image: <span class=SpellE><span
+class=GramE>url</span></span><span class=GramE>(</span>marble.gif) center 50%}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>Background</i></span><i> </i>– указывает либо на рисунок, либо на
+    цвет фона, либо и на то, и на другое одновременно. Применяется вместо <span
+class=SpellE>background-image</span> и <span class=SpellE>background-color</span>. <a name="_Свойства_текста"></a></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Свойства
+    текста</b></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>word-spacing</i></span> – интервал между словами: либо <span class=SpellE>normal</span>, либо
+    относительный интервал в <span class=SpellE>em</span>, например: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>H1 {<span class=SpellE>word-spacing</span>: 1em}</span></p>
+  <p style='line-height:
+normal'>Увеличит интервал между словами на единицу. Допустимы отрицательные
+    значения. Значение по умолчанию – 0. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>letter-spacing</i></span> – межсимвольный интервал: либо <span class=SpellE>normal</span>, либо
+    относительный интервал в <span class=SpellE>em</span>, например: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>H1 {<span class=SpellE>letter-spacing</span>: 0.1em}</span></p>
+  <p style='line-height:
+normal'>Увеличит интервал между символами на одну десятую. Допустимы
+    отрицательные значения. Значение по умолчанию – 0. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>text-decoration</i></span> – оформление текста: <span class=SpellE>none</span> – нет, <span class=SpellE>underline</span> – подчеркиванием, <span class=SpellE>overline</span> – надчеркиванием, <span
+class=SpellE>line-through</span> – перечеркиванием, <span class=SpellE>blink</span> – мерцанием текста. Данное свойство работает не везде. IE, например,
+    отказывается мерцать, <span class=SpellE>Opera</span>, если станица состоит из <span
+class=SpellE>Frames</span> (кадров, рамок, фреймов), мерцает через раз, то
+    есть, <span class=GramE>она</span> либо показывает текст, не мерцая, либо
+    вообще не выводит его на экран – как придется. Поэтому, чтобы избежать
+    ситуации, в которой потребитель вообще ничего не увидит, лучше избегать
+    использования <span class=SpellE>Blink</span>. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>vertical-align</i></span> – определяет вертикальное выравнивание встроенных элементов: <span
+class=SpellE>baseline</span> – по опорной линии (нижнюю часть по нижней части
+    родительского элемента), <span class=SpellE>sub</span> – нижний индекс, <span
+class=SpellE>super</span> – верхний индекс, <span class=SpellE>top</span> –
+    выравнивание по верху, <span class=SpellE>text-top</span> – по верху текста, <span
+class=SpellE>middle</span> – посредине, <span class=SpellE>bottom</span> –
+    понизу, <span class=SpellE>text-bottom</span> – по низу текста или в процентах
+    от высоты строки. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>text-transform</i></span> – преобразование текста: <span class=SpellE>capitalize</span> – все слова с
+    большой буквы, <span class=SpellE>uppercase</span> – все прописные, <span
+class=SpellE>lowercase</span> – все строчные, <span class=SpellE>none</span> –
+    нет преобразования. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>text-align</i></span><i> </i>– выравнивание текста: <span
+class=SpellE>left</span> – влево, <span class=SpellE>right</span> – вправо, <span
+class=SpellE>center</span> – по центру, <span class=SpellE>justify</span> – по
+    обоим краям. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>text-indent</i></span> – отступ первой строки, указывается в пунктах, символах или процентах. При
+    отрицательном значении означает выступ. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>line-height</i></span> – высота строки (междустрочный интервал): либо <span class=SpellE>normal</span> – обычный (от 1 до 1.2), либо пиксели, проценты, относительный размер (<span
+class=SpellE>em</span>). </p>
+  <h1 align=center style='text-align:center'><a name="_Оформление_абзацев"></a><span
+style='font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:windowtext'>Оформление абзацев</span></h1>
+  <p style='line-height:
+normal'>Отступы задаются в процентах, пунктах и относительных величинах (<span
+class=SpellE>em</span>). Значение AUTO, определяет отступ по умолчанию. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>margin-top</i></span> – верхний отступ. </p>
+  <p style='line-height:
+normal'><span class=GramE><i><span
+lang=EN-US>margin-right</span></i></span><span
+lang=EN-US> – </span>правый отступ<span lang=EN-US>. </span></p>
+  <p style='line-height:
+normal'><span class=GramE><i><span
+lang=EN-US>margin-bottom</span></i></span><span
+lang=EN-US> – </span>нижний отступ<span lang=EN-US>. </span></p>
+  <p style='line-height:
+normal'><span class=GramE><i><span
+lang=EN-US>margin</span>-</i><i><span lang=EN-US>left</span></i></span> – левый отступ. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>margin</i></span> – определяет значение всех отступов в порядке верх, право, низ, лево (<span
+class=GramE>с верху</span>, по часовой стрелке). Если указано только три
+    значения, левый отступ равен правому, если только два, левый равен правому, а
+    нижний верхнему; если один – все отступы одинаковы. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-top-width</i></span> – верхняя окантовка абзаца: <span class=SpellE>thin</span> – тонкая, <span
+class=SpellE>medium</span> – средняя, <span class=SpellE>thick</span> –
+    толстая, либо точная величина в пикселях. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-right-width</i></span> – правая окантовка абзаца: <span class=SpellE>thin</span> – тонкая, <span
+class=SpellE>medium</span> – средняя, <span class=SpellE>thick</span> –
+    толстая, либо точная величина в пикселях. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-bottom-width</i></span> – нижняя окантовка абзаца: <span class=SpellE>thin</span> – тонкая, <span
+class=SpellE>medium</span> – средняя, <span class=SpellE>thick</span> –
+    толстая, либо точная величина в пикселях. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-left-width</i></span> – левая окантовка абзаца: <span class=SpellE>thin</span> – тонкая, <span
+class=SpellE>medium</span> – средняя, <span class=SpellE>thick</span> –
+    толстая, либо точная величина в пикселях. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-width</i></span> – окантовка абзаца: <span class=SpellE>thin</span> – тонкая, <span
+class=SpellE>medium</span> – средняя, <span class=SpellE>thick</span> –
+    толстая, либо точная величина в пикселях. Значения указываются в том же
+    порядке: верх, право, низ, лево (<span class=GramE>с верху</span>, по часовой
+    стрелке). <span class=GramE>Если указано только три значения, левая рамка равна
+    правой, если только два, левая равна правой, а нижняя верхней; если одно – все
+    рамки одинаковы. </span></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-color</i></span> – определяет цвет окантовки, по тому же принципу: <span class=GramE>с верху</span>,
+    по часовой стрелке. </p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><i>border-style</i></span></span><span class=GramE> – стиль окантовки: <span
+class=SpellE>none</span> – нет окантовки (по умолчанию), <span class=SpellE>dotted</span> – точки, <span class=SpellE>dashed</span> – пунктир, <span class=SpellE>solid</span> – непрерывный, <span class=SpellE>double</span> – двойная линия, <span
+class=SpellE>groove</span> – канавка, <span class=SpellE>ridge</span> – выступ, <span class=SpellE>inset</span> – углубление блока, <span class=SpellE>outset</span> – возвышающаяся табличка.</span> Стиль определяется для всех четырех сторон.
+    Поскольку по умолчанию стиль не назначен, пока он не будет указан, рамка не
+    отображается, несмотря на то, что может быть задан ее цвет или толщина. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-top</i></span>–
+    позволяет в одной команде установить стиль, ширину и цвет верхней окантовки. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-right</i></span> – позволяет в одной команде установить стиль, ширину и цвет правой окантовки. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-bottom</i></span> – позволяет в одной команде установить стиль, ширину и цвет нижней окантовки. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>border-left</i></span> – позволяет в одной команде установить стиль, ширину и цвет левой окантовки. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>Border</i></span> – позволяет в одной команде установить стиль, ширину и цвет всей окантовки.
+    Например: </p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>border</span></span><span lang=EN-US
+style='font-family:"Courier New";color:#C00000;'>: <span
+class=SpellE>solid</span> 0.5em</span></p>
+  <p style='line-height:
+normal'>или </p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>border</span></span><span lang=EN-US
+style='font-family:"Courier New";color:#C00000;'>: <span
+class=SpellE>solid</span> <span class=SpellE>thick</span> <span class=SpellE>blue</span></span></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>padding-top</i></span> – верхний отступ окантовки от текста. Отрицательные значения не принимаются и
+    уменьшение возможно лишь за счет уменьшения высоты строки (<span class=SpellE>line-height</span>). </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>padding-right</i></span> – правый отступ окантовки от текста. </p>
+  <p style='line-height:
+normal'><span class=SpellE>padding-bottom</span> – нижний отступ окантовки от
+    текста. Отрицательные значения не принимаются и уменьшение возможно лишь за
+    счет уменьшения высоты строки (<span class=SpellE>line-height</span>). </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>padding-left</i></span> – левый отступ окантовки от текста. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>Padding</i></span> – определяет значение всех отступов окантовки в порядке: верх, право, низ, лево
+    (<span class=GramE>с верху</span>, по часовой стрелке). Если указано только три
+    значения, левый отступ равен правому, если только два, левый равен правому, а
+    нижний верхнему; если один – все отступы от окантовки одинаковы. </p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Атрибуты
+    вставляемых элементов</b></p>
+  <p style='line-height:
+normal'><span class=SpellE><i>width</i></span> – ширина в процентах или пикселях, применяется в таблицах, разделителях (HR), а
+    так же, для резервирования места рисункам. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>height</i></span> – высота. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>Float</i></span> – определяет положение нетекстовых элементов <span class=SpellE>none</span> –
+    запрещает отделение от текста, <span class=SpellE>left</span> – выравнивает
+    влево, <span class=SpellE>right</span> – выравнивает вправо. </p>
+  <p style='line-height:
+normal'><span class=SpellE><i>Clear</i></span> – определяет отделение нетекстовых элементов от текста: <span class=SpellE>none</span> – нет отделения, текст располагается рядом с объектом, <span class=SpellE>left</span> – текст располагается под объектом, слева, <span class=SpellE>right</span> –
+    текст под объектом, справа, <span class=SpellE>both</span> – текст под объектом
+    с любой из сторон. Например: </p>
+  <p style='line-height:
+normal'>P {<span class=SpellE>Clear:left</span>}</p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Списки в CSS</b></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>list-style-type</span></span></p>
+  <p style='line-height:normal'>Позволяет определять вид маркера элементов списка.
+    Это могут быть цифры, буквы, квадратики, кружочки и др. Ниже приведены основные
+    значения этого свойства:</p>
+  <p style='line-height:normal'><span class=SpellE>disk</span> - маркер в виде
+    закрашенного круга;</p>
+  <p style='line-height:normal'><span class=SpellE>circle</span> - маркер в виде <span
+class=SpellE>незакрашенного</span> круга;</p>
+  <p style='line-height:normal'><span class=SpellE>square</span> - маркер в виде
+    закрашенного квадрата;</p>
+  <p style='line-height:normal'><span class=SpellE>decimal</span> - обычные
+    десятичные числа<span class=GramE> ,</span> например 1,2,3,4,5 и т. д. ;</p>
+  <p style='line-height:normal'><span class=SpellE>upper-roman</span> - большие
+    римские цифры, типа I, II, III, IV, V и т.д.<span class=GramE> ;</span></p>
+  <p style='line-height:normal'><span class=SpellE>lower-roman</span> - маленькие
+    римские цифры типа <span class=SpellE>i</span>, <span class=SpellE>ii</span>, <span
+class=SpellE>iii</span>, <span class=SpellE>iv</span>, <span class=SpellE>v</span> и т.д.</p>
+  <p style='line-height:normal'><span class=SpellE>upper-alpha</span> - большие
+    буквы A, B, C, D, E и так далее;</p>
+  <p style='line-height:normal'><span class=SpellE>lower-alpha</span> - малые буквы
+    типа <span class=SpellE>a,b,c,d,e</span> и т.д.;</p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US>none</span></span> - маркер списка <span
+class=SpellE>отсутсвует</span>;</p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>list-style-position</span></span></p>
+  <p style='line-height:normal'>Это свойство определяет положение маркера. Может
+    принимать два значения:</p>
+  <p style='line-height:normal'><span class=SpellE>outside</span> - за пределами
+    основного блока элемента списка;</p>
+  <p style='line-height:normal'><span class=SpellE>inside</span> - внутри основного
+    блока списка.</p>
+  <p style='line-height:normal'><img width=275 height=241
+src="лаба%201.files/image005.jpg" v:shapes="_x0000_i1029"></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>list-style-image</span></span></p>
+  <p style='line-height:normal'>Оно позволяет поставить вместо маркера любое
+    изображение. В качестве значения указывается ключевое слово <span class=SpellE>url</span> и затем в круглых скобках путь к изображению. </p>
+  <p style='line-height:normal'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-family:"Courier New";color:#C00000;'>ul</span></span></span><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'> {list-style-image: <span class=SpellE>url</span>(galka.gif);}</span></p>
+  <p style='line-height:normal'><b>Пример</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;style type=&quot;text/<span class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>ol.in</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>{<span class=GramE>list-style-position</span>: inside;
+    list-style-type: decimal }</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>ul.out</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>{<span class=GramE>list-style-position</span>: outside;
+    list-style-type: lower-roman}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=SpellE>ol</span> class=&quot;in&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=SpellE>li</span><span class=GramE>&gt;Э</span>то
+    первый элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=SpellE>li</span><span class=GramE>&gt;Э</span>то
+    второй элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>pre&gt;</span>C<span
+class=SpellE>писок</span> имеет &lt;<span class=SpellE>i</span>&gt;&lt;u&gt;list-style-position&lt;/u&gt;&lt;/<span
+class=SpellE>i</span>&gt; = &quot;&lt;b&gt;inside&lt;/b&gt;&quot;&lt;/pre&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/<span class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=SpellE>ul</span> class=&quot;out&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=SpellE>li</span><span class=GramE>&gt;Э</span>то
+    первый элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=SpellE>li</span><span class=GramE>&gt;Э</span>то
+    второй элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/<span class=SpellE>ul</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=SpellE>pre</span>&gt;Список имеет &lt;<span
+class=SpellE>i</span>&gt;&lt;<span class=SpellE>u</span>&gt;<span class=SpellE>list-style-position</span>&lt;/<span
+class=SpellE>u</span>&gt;&lt;/<span class=SpellE>i</span>&gt; = &quot;&lt;<span
+class=SpellE>b</span>&gt;<span class=SpellE>outside</span>&lt;/<span
+class=SpellE>b</span>&gt;&quot;&lt;/<span class=SpellE>pre</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/<span class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/<span class=SpellE>html</span>&gt;</span></p>
+  <p style='line-height:normal'><u><span style='font-family:"Courier New"'>Вот что
+    получилось:</span></u></p>
+  <p style='line-height:normal'><span style='font-family:"Courier New";'><img width=358 height=150
+src="лаба%201.files/image007.jpg" v:shapes="Рисунок_x0020_19"></span></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Ссылки в CSS</b></p>
+  <p style='line-height:normal'>A:link <span class=GramE>{ </span>... стиль
+    оформления обычной ссылки... }</p>
+  <p style='line-height:normal'>A:active <span class=GramE>{ </span>... стиль
+    оформления ссылки в момент нажатия... }</p>
+  <p style='line-height:normal'>A:visited <span class=GramE>{ </span>... стиль
+    оформления посещенной ссылки... }</p>
+  <p style='line-height:normal'>А:hover <span class=GramE>{ </span>... стиль
+    оформления ссылки, на которую наведен указатель мыши ... }</p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Courier New";color:#0000CC;'>a:</span></span><span
+lang=EN-US style='font-family:"Courier New";color:#0000CC;'>link {color: blue ;}</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Courier New";color:#0000CC;'>a:</span></span><span
+lang=EN-US style='font-family:"Courier New";color:#0000CC;'>visited {<span class=SpellE>color:gray</span>;}</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Courier New";color:#0000CC;'>a:</span></span><span
+lang=EN-US style='font-family:"Courier New";color:#0000CC;'>hover { <span class=SpellE>color:red</span> ; text-<span class=SpellE>decoration:none</span>;}</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Courier New";color:#0000CC;'>a:</span></span><span
+lang=EN-US style='font-family:"Courier New";color:#0000CC;'>active {<span class=SpellE>color:green</span>; text-<span class=SpellE>decoration:none</span>;}</span></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b><span
+style='font-size:14.0pt'>Примеры:</span></b></p>
+  <p style='line-height:
+normal'><i>1.Этот пример показывает, как
+    задать шрифт текста, размер, стиль, жирность и др. </i></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;style type=&quot;text/<span class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>h1 {font-family: courier}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>h2.font {font-family: sans-serif; font-size: 200%;
+    font-style: oblique; font-variant: small-caps; font-weight: 800}</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Courier New&quot;;
+color:#C00000;'>pre</span></span><span lang=EN-US
+style='font-family:"Courier New";color:#C00000;'> {font-family: times}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;<span class=GramE>pre&gt;</span>применяется шрифт
+    &quot;times&quot;&lt;/pre&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;h1&gt;заголовок h1&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;h2 class=&quot;font&quot;&gt;заголовок
+    h2&lt;/h2&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/<span class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Courier New&quot;;color:#C00000;
+'>&lt;/<span class=SpellE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><img width=242 height=108
+src="лаба%201.files/image009.jpg" v:shapes="Рисунок_x0020_26"></p>
+</div>
+</body>
+</html>

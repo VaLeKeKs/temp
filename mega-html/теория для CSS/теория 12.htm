@@ -1,0 +1,1045 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%2012.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%2012.files/colorschememapping.xml">
+<style>
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+a:hover{color:red;text-decoration:none;}
+<!--
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+ol
+	{ul
+	{-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1> <ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Параметры
+    позиционирования в CSS</b></p>
+  <p style='line-height:
+normal'>Параметры позиционирования в CSS позволяют:</p>
+  <p style='line-height:
+normal'>определить левую, правую, верхнюю, и нижнюю позиции элемента:</p>
+  <p style='line-height:
+normal'>задать форму элемента:</p>
+  <p style='line-height:
+normal'>поместить элемент позади другого:</p>
+  <p style='line-height:
+normal'>определить, что будет происходить, когда содержимое элемента слишком
+    большое для размещения в указанной области.</p>
+  <p style='line-height:
+normal'><b>Параметр 'bottom'</b></p>
+  <p style='line-height:
+normal'>Данный параметр определяет нижний край элемента.</p>
+  <p style='line-height:
+normal'><b>Примечание</b>:Если параметр
+    &quot;position&quot; имеет значение &quot;static&quot;, параметр
+    &quot;bottom&quot; не оказывает влияния.</p>
+  <p style='line-height:
+normal'>Наследование: нет.</p>
+  <p style='line-height:
+normal'><b>Примеры</b>:</p>
+  <p style='line-height:
+normal'>В примере показано, как задать нижний край элемента pre на 50 px выше
+    нижнего края окна: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>position:
+    absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>bottom:
+    50px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'>В примере показано, как задать нижний край элемента pre на 50 px ниже
+    нижнего края окна: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>position:
+    absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>bottom:
+    -50px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'>Может принимать следующие значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>auto</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Позволяет браузеру самостоятельно вычислить нижнюю позицию</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>%</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Задает нижнюю позицию в % от положения нижнего края окна</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>length</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Задает нижнюю позицию в px, см, и т.д. от нижнего края окна.
+          Допускаются отрицательные значения.</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Параметр 'clip' </b></p>
+  <p style='line-height:
+normal'>Данный параметр задает форму элемента. </p>
+  <p style='line-height:
+normal'>В ситуации если, например, изображение больше того элемента в котором
+    располагается, параметр позволяет определить размеры изображения, обрезать по
+    форме и вывести.</p>
+  <p style='line-height:
+normal'><b>Примечание</b>: Этот параметр
+    нельзя использовать для элементов с параметром &quot;overflow&quot;, заданным
+    как &quot;visible&quot;.</p>
+  <p style='line-height:
+normal'>Наследование: нет.</p>
+  <p style='line-height:
+normal'><b>Пример</b>:</p>
+  <p style='line-height:
+normal'>p</p>
+  <p style='line-height:
+normal'>{</p>
+  <p style='line-height:
+normal'>position:absolute;</p>
+  <p style='line-height:
+normal'><span lang=EN-US>clip:rect(2px 175px
+    100px 0px)</span></p>
+  <p style='line-height:
+normal'>}</p>
+  <p style='line-height:
+normal'>Может принимать следующие значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>shape</p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Задает форму элемента. Допустимым значением формы является: rect
+          (top, right, bottom, left)</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>auto</p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Браузер задает форму элемента</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Параметр 'left' </b></p>
+  <p style='line-height:
+normal'>Данный параметр определяет левый край элемента.</p>
+  <p style='line-height:
+normal'><b>Примечание</b>: Если параметр
+    &quot;position&quot; имеет значение &quot;static&quot;, параметр
+    &quot;left&quot; не оказывает влияния.</p>
+  <p style='line-height:
+normal'>Наследование: нет.</p>
+  <p style='line-height:
+normal'><b>Примеры</b>:</p>
+  <p style='line-height:
+normal'>В примере показано, как задать левый край элемента pre в 50 px справа
+    от левого края окна: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>position:
+    absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>left:
+    50px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'>В примере показано, как задать левый край элемента pre в 50 px слева от
+    левого края окна: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>position:
+    absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>left:
+    -50px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'>Может принимать следующие значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>auto</p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Позволяет браузеру вычислить левую позицию.</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>%</p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Задает левую позицию в % от значения для левого края окна.</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>length</p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Задает левую позицию в px, см и т.д. от левого края окна. Допускаются
+          отрицательные значения.</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Параметр 'overflow'</b></p>
+  <p style='line-height:
+normal'>Данный параметр определяет, что происходит, когда содержимое элемента
+    переполняет его область.</p>
+  <p style='line-height:
+normal'>Наследование: нет.</p>
+  <p style='line-height:
+normal'>Пример:</p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>div </span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>{</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>overflow: auto</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'>Может принимать следующие значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>visible</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Содержимое не обрезается. Оно выводится за пределами элемента.</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>hidden</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Содержимое обрезается, но браузер не выводит полосу прокрутки для
+          просмотра всего содержимого. </p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>scroll</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Содержимое обрезается, но браузер выводит полосу прокрутки для
+          просмотра всего содержимого. </p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>auto</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Если содержимое обрезается, то браузер должен вывести полосу
+          прокрутки для просмотра всего содержимого.</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Параметр 'position'</b></p>
+  <p style='line-height:
+normal'>Данный параметр помещает элемент в статическое, относительное,
+    абсолютное или фиксированное положение.</p>
+  <p style='line-height:
+normal'>Наследование: нет.</p>
+  <p style='line-height:
+normal'><b>Пример</b>:</p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>p</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>{</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>position:static;</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'>Может принимать следующие значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=77 valign=top><p style='line-height:
+  normal'>Значение</p></td>
+      <td width=553 valign=top><p style='line-height:
+  normal'>Описание</p></td>
+    </tr>
+    <tr>
+      <td width=77 valign=top><p style='line-height:
+  normal'>static</p></td>
+      <td width=553 valign=top><p style='line-height:
+  normal'>Элемент помещается в обычное положение (согласно нормальному потоку).
+          Для значения &quot;static&quot; параметры &quot;left&quot; и &quot;top&quot;
+          не используются.</p></td>
+    </tr>
+    <tr>
+      <td width=77 valign=top><p style='line-height:
+  normal'>relative</p></td>
+      <td width=553 valign=top><p style='line-height:
+  normal'>Перемещает элемент относительно нормального положения, так что
+          &quot;left:20&quot; добавляет 20 пикселей к позиции LEFT элемента</p></td>
+    </tr>
+    <tr>
+      <td width=77 valign=top><p style='line-height:
+  normal'>absolute</p></td>
+      <td width=553 valign=top><p style='line-height:
+  normal'>С помощью значения &quot;absolute&quot; элемент можно разместить в
+          любом месте страницы. Позиция элемента определяется параметрами
+          &quot;left&quot;, &quot;top&quot;, &quot;right&quot;, и &quot;bottom&quot;</p></td>
+    </tr>
+    <tr>
+      <td width=77 valign=top><p style='line-height:
+  normal'>fixed</p></td>
+      <td width=553 valign=top>&nbsp;</td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Параметр 'right' </b></p>
+  <p style='line-height:
+normal'>Данный параметр определяет правый край элемента.</p>
+  <p style='line-height:
+normal'><b>Примечание</b>: Если параметр
+    &quot;position&quot; имеет значение &quot;static&quot;, то параметр
+    &quot;right&quot; не оказывает влияния.</p>
+  <p style='line-height:
+normal'>Наследование: нет.</p>
+  <p style='line-height:
+normal'><b>Примеры</b>:</p>
+  <p style='line-height:
+normal'>В примере показано, как задать правый край элемента pre на 50 px влево
+    от правого края окна: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>position:
+    absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>right:
+    50px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'>В примере показано, как задать правое поле элемента pre на 50 px вправо
+    от правого края окна: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>position:
+    absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>right:
+    -50px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'>Может принимать следующие значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>auto</p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Позволяет браузеру вычислить правую позицию.</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>%</p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Задает правую позицию в % от значения правого края окна.</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>length</p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Задает правую позицию в px, см, и т.д. от правого края окна.
+          Допускаются отрицательные значения.</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Параметр 'top' </b></p>
+  <p style='line-height:
+normal'>Данный параметр определяет верхний край элемента.</p>
+  <p style='line-height:
+normal'><b>Примечание</b>: Если параметр
+    &quot;position&quot; имеет значение &quot;static&quot;, то параметр
+    &quot;top&quot; не оказывает влияния.</p>
+  <p style='line-height:
+normal'>Наследование: нет.</p>
+  <p style='line-height:
+normal'><b>Примеры:</b></p>
+  <p style='line-height:
+normal'>В примере показано, как задать верхний край элемента pre на 50 px ниже
+    верхнего края окна: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>position:
+    absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>top:
+    50px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'>В примере показано, как задать верхний край элемента pre на 50 px выше
+    верхнего края окна: </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>position:
+    absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>top:
+    -50px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><b>Параметр 'vertical-align'</b></p>
+  <p style='line-height:
+normal'>Данный параметр задает вертикальное выравнивание элемента.</p>
+  <p style='line-height:
+normal'>Наследование: нет.</p>
+  <p style='line-height:
+normal'><b>Примеры:</b></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>img</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>{ </span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>vertical-align: baseline</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>}  </span></p>
+  <p style='line-height:
+normal'>Может принимать следующие значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>baseline</p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'>Элемент размещается на базовой строке родительского элемента.</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>sub </p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'>Выравнивает элемент как нижний индекс</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>super</p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'>Выраванивает элемент как верхний индекс</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>top</p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'>Вершина элемента выравнивается с вершиной самого высокого элемента в
+          строке</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>text-top</p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'>Вершина элемента выравнивается с вершиной шрифта родительского
+          элемента </p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>middle</p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'>Элемент помещается в середине родительского элемента </p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>bottom</p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'>Нижняя часть элемента выравнивается с самым нижним элементом в строке</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>text-bottom</p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'>Нижняя часть элемента выравнивается с минимальной нижней точкой
+          родительского элемента</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>length</p></td>
+      <td width=520 valign=top>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'>%</p></td>
+      <td width=520 valign=top><p style='line-height:
+  normal'>Выравнивает элемент в % от значения параметра
+          &quot;line-height&quot;. Допускаются отрицательные значения.</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Параметр 'z-index' </b></p>
+  <p style='line-height:
+normal'>Данный параметр задает порядковый номер элемента в стеке. Элемент с
+    большим порядковым номером стека всегда находится перед элементом с меньшим
+    порядковым номером стека.</p>
+  <p style='line-height:
+normal'><b>Примечания</b>:</p>
+  <p style='line-height:
+normal'>Элементы могут иметь отрицательные порядковые номера стека.</p>
+  <p style='line-height:
+normal'>Z-index работает только с теми элементами, которые были позиционированы
+    не как static (например, position:absolute;)!</p>
+  <p style='line-height:
+normal'>Наследование: нет.</p>
+  <p style='line-height:
+normal'><b>Пример</b>:</p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>img</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>{</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>position:absolute </span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>z-index: 1</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>}  </span></p>
+  <p style='line-height:
+normal'><b>Примеры:</b></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как позиционировать элемент относительно его обычного
+    положения. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p.left</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>position:relative;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>left:-20px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p.right</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>position:relative;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>left:20px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>Параграф</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;p
+    class=&quot;left&quot;&gt;Параграф смещен влево относительно обычного положения
+    &lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;p
+    class=&quot;right&quot;&gt;Параграф смещен вправо относительно обычного
+    положения&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как позиционировать элемент с помощью абсолютного значения. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p.ab</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>position:absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>left:75px;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>top:200px</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>style</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>head</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>body</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;p
+    class=&quot;ab&quot;&gt;Параграф имеет абсолютное местоположение и </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>смещен
+    на 75px от левого края страницы и на 200px от верха страницы&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;p&gt;Параграф&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как задать форму элемента, по которой он обрезается и
+    выводится. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>position:absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>clip:rect(2px 250px 250px 0px)</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;p&gt;Обрезается
+    параграф параграф параграф:&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;p&gt;&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как использовать параметр overflow для определения действий,
+    когда содержимое элемента не помещается в указанной области. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>div </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-color:yellow;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>width:175px;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>height:70px;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>overflow: auto</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;p&gt;Если
+    содержимое элемента превышает заданные значения ширины и </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>высоты
+    необходимо использовать параметр overflow который определяет, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>что
+    делать в этой ситуации.&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;div&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>В
+    данном случае переполняется бокс элемента и overflow определяет, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>что
+    делать - установлено значение auto.  </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/div&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как выравнять в тексте изображение по вертикали. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>img.first {vertical-align:text-bottom}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>img.second {vertical-align:text-top}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Пара</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>- </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;img class=&quot;second&quot;
+    border=&quot;0&quot; </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>src=&quot;image.gif&quot;
+    width=&quot;100&quot; height=&quot;100&quot; /&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>граф</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>.</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/p&gt; </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Пара</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>- </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;img class=&quot;first&quot;
+    border=&quot;0&quot; border-color=&quot;blue&quot; </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>src=&quot;image.gif&quot;
+    width=&quot;100&quot; height=&quot;100&quot; /&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>граф.</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как можно использовать Z-index для размещения элемента
+    &quot;позади&quot; другого элемента. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>img.index</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>position:absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>left:10px;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>top:40px;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>z-index:-1;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;h4&gt;Пример
+    использования Z-index&lt;/h4&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;img class=&quot;index&quot;
+    src=&quot;image.gif&quot; width=&quot;120&quot; height=&quot;150&quot; border=&quot;1&quot;&gt; </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;p&gt;Изображение
+    с z-index равным -1 имеет меньший приоритет, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>поэтому
+    расположено &quot;позади&quot;.&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, что произойдет если элементы из предыдущего примера изменят
+    свои значения Z-index. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>img.index</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>position:absolute;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>left:10px;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>top:40px;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>z-index:1</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;h4&gt;Пример
+    использования Z-index&lt;/h4&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;img class=&quot;index&quot;
+    src=&quot;image.gif&quot; width=&quot;120&quot; height=&quot;150&quot;
+    border=&quot;3&quot;&gt; </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;p&gt;Изображение
+    с z-index равным 1 имеет более высокий приоритет, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>поэтому
+    расположено &quot;спереди&quot;.&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="declaration"> 
+      <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sender">  </xs:element>
+                <xs:element name="receiver">  </xs:element> 
+                <xs:element name="item"></xs:element>
+                <xs:element name = "customs_duty"></xs:element>
+                <xs:element name = "date"></xs:element>
+             </xs:sequence>    
+        </xs:complexType>  
+    </xs:element>  
+</xs:schema>

@@ -1,0 +1,917 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%206.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%206.files/colorschememapping.xml">
+<style>
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+a:hover{color:red;text-decoration:none;}
+<!--
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+ol
+	{ul
+	{-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1> <ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Параметры
+    шрифта в CSS</b></p>
+  <p style='line-height:
+normal'>Параметры шрифта в CSS позволяют изменить семейство шрифта, степень
+    жирности, размер, и стиль текста. Обратите внимание на то, что в CSS шрифты
+    идентифицируются названием шрифта. В случае, если браузер не поддерживает данный
+    шрифт, будет использоваться шрифт по умолчанию.</p>
+  <p style='line-height:
+normal'><b>Параметр 'font'</b></p>
+  <p style='line-height:
+normal'>Параметр font предназначен для сокращенной записи, позволяющей задать
+    все свойства шрифта в одном объявлении (за исключением некоторых системных
+    шрифтов). </p>
+  <p style='line-height:
+normal'>Наследование: да.</p>
+  <p style='line-height:
+normal'><b>Может принимать следующие
+    значения:</b></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=473 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>font-style</p></td>
+      <td width=473 rowspan=5 valign=top><p style='line-height:
+  normal'>Задает свойства шрифта. Значение line-height задает расстояние между
+          строками. Это значение может быть числом, % или размером шрифта</p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>font-variant</p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>font-weight</p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>font-size* /line-height</p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>font-family</p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>Caption</p></td>
+      <td width=473 valign=top><p style='line-height:
+  normal'>Определяет шрифт для элементов управления с заголовком (таких, как
+          кнопки, раскрывающиеся меню и т.д.)</p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>icon</p></td>
+      <td width=473 valign=top><p style='line-height:
+  normal'>Определяет шрифты, которые используются метками пиктограмм приложений</p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>menu</p></td>
+      <td width=473 valign=top><p style='line-height:
+  normal'>Определяет шрифты, которые используются для раскрывающихся меню.</p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>message-box</p></td>
+      <td width=473 valign=top><p style='line-height:
+  normal'>Определяет шрифты, которые используются в диалоговых окнах.</p></td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>small-caption</p></td>
+      <td width=473 valign=top>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=158 valign=top><p style='line-height:
+  normal'>status-bar</p></td>
+      <td width=473 valign=top><p style='line-height:
+  normal'>Определяет шрифты, которые используются в строке состояния окна</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'>(*это свойство имеет также шестое значение: &quot;line-height&quot;,
+    которое задает расстояние между строками)</p>
+  <p style='line-height:
+normal'><b>Примеры</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font: oblique arial</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>} </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font: italic 200 arial</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font: italic small-caps 10px/12px serif</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>} </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font: status-bar</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><b>Параметр</b><b><span lang=EN-US> 'font-family'</span></b></p>
+  <p style='line-height:
+normal'>Данное свойство определяет для элемента список имен семейств шрифтов
+    и/или имен порождающих семейств в порядке их приоритета. Если специфицировано
+    несколько значений, то браузер будет использовать первое распознанное значение.</p>
+  <p style='line-height:
+normal'>Существует два типа значений font-family:</p>
+  <p style='line-height:
+normal'><span lang=EN-US>family-name: </span>имя семейства шрифтов<span lang=EN-US> (&quot;times&quot;, &quot;courier&quot;, &quot;arial&quot;, </span>и т<span lang=EN-US>.</span>д<span lang=EN-US>.);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US>generic-family: </span>имя порождающего семейства<span lang=EN-US>,
+    (&quot;serif&quot;, &quot;sans-serif&quot;, &quot;cursive&quot;,
+    &quot;fantasy&quot;, &quot;monospace&quot;).</span></p>
+  <p style='line-height:
+normal'>В качестве разделителя используется запятая. Для последнего варианта
+    желательно определять имя порождающего семейства. Если же имя семейства содержит
+    пробел, то его необходимо поместить в кавычки. При использовании в HTML
+    атрибута &quot;style&quot; применяются одиночные кавычки.</p>
+  <p style='line-height:
+normal'>Наследование: да.</p>
+  <p style='line-height:
+normal'><b>Может принимать следующие
+    значения:</b></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=140 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=463 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=140 valign=top><p style='line-height:
+  normal'>family-name</p></td>
+      <td width=463 valign=top><p style='line-height:
+  normal'>Определяет для элемента имен семейств шрифтов и/или имен </p></td>
+    </tr>
+    <tr>
+      <td width=140 valign=top><p style='line-height:
+  normal'>generic-family</p></td>
+      <td width=463 valign=top><p style='line-height:
+  normal'>порождающих семейств в порядке их приоритета.</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Примеры</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-family: Garamond, serif</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>} </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p style=&quot;font-family:  Courier, Prestige, sans-serif&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><b>Параметр 'font-size'</b></p>
+  <p style='line-height:
+normal'>Параметр задает размер шрифта.</p>
+  <p style='line-height:
+normal'>Наследование: да.</p>
+  <p style='line-height:
+normal'><b>Может принимать следующие
+    значения:</b></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>xx-small</p></td>
+      <td width=544 rowspan=7 valign=top><p style='line-height:
+  normal'>Задает размер шрифта от xx-small до xx-large</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>x-small</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>medium</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>x-large</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>x-small</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>medium</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>x-large</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>smaller</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Задает размер шрифта меньше, чем у порождающего элемента</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>larger</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Задает размер шрифта больше, чем у порождающего элемента</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>length</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Задает фиксированный размер шрифта</p></td>
+    </tr>
+    <tr>
+      <td width=82 valign=top><p style='line-height:
+  normal'>%</p></td>
+      <td width=544 valign=top><p style='line-height:
+  normal'>Задает размер шрифта в % от порождающего элемента</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Примеры</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-size: small</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>pre</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-size: 5pt</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>i</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-size: 3em</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-size: 120%</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><b>Параметр 'font-size-adjust'</b></p>
+  <p style='line-height:normal'>Отношение между высотой буквы &quot;x&quot; нижнего
+    регистра в шрифте и высотой &quot;font-size&quot; называется значением аспекта
+    шрифта. Если значение аспекта большое, то шрифт будет легче читаться, когда его
+    размер уменьшается. Например, Verdana имеет значение аспекта, равное 0.58, т.е.
+    если размер шрифта равен 100px, то высота буквы x нижнего регистра будет равна
+    58px. Times New Roman имеет значение аспекта 0.46. Таким образом, чем больше
+    значение аспекта шрифта, тем легче он читается при уменьшении. В данном случае
+    шрифт Verdana при уменьшении будет читаться лучше, чем Times New Roman.</p>
+  <p style='line-height:normal'>Свойство font-size-adjust определяет значение
+    аспекта для элемента, которое будет сохранять высоту буквы x нижнего регистра
+    выбранного шрифта. </p>
+  <p style='line-height:normal'>Наследование: да.</p>
+  <p style='line-height:normal'>Возможные значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>none</p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Не сохранять высоту буквы x шрифта, если шрифт недоступен</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>number</p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Определяет значение аспекта для шрифта </p>
+        <p style='line-height:
+  normal'>Используемая формула:</p>
+        <p style='line-height:
+  normal'>размер выбранного шрифта * (font-size-adjust/значение аспекта
+          доступного шрифта) = размер шрифта для доступного шрифта</p>
+        <p style='line-height:
+  normal'>Пример:</p>
+        <p style='line-height:
+  normal'>Если 14px Verdana (значение аспекта 0.58) недоступен, а доступный
+          шрифт имеет значение аспекта 0.46, то размер шрифт для подстановки будет 14 *
+          (0.58/0.46) = 17.65px.</p></td>
+    </tr>
+  </table>
+  <p style='line-height:normal'><b><span
+lang=EN-US>Пример:</span></b></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-size-adjust: none</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>} </span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-size-adjust: 0.50</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:normal'><b>Параметр</b><b><span lang=EN-US> 'font-stretch'</span></b></p>
+  <p style='line-height:normal'>Данный параметр сжимает или расширяет текущее
+    семейство шрифтов. </p>
+  <p style='line-height:normal'>Необходимо отметить, что семейство шрифтов
+    сжимается или расширяется только горизонтально.</p>
+  <p style='line-height:normal'>Наследование: да.</p>
+  <p style='line-height:normal'>Возможные значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'>normal</p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Задает масштаб сжатия или расширения как обычный</p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'>wider</p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Задает масштаб расширения как следующее расширенное значение</p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'>narrower</p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Задает масштаб сжатия как следующее сжатое значение</p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><span lang=EN-US>ultra-condensed </span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>extra-condensed</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>condensed</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>semi-condensed</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>semi-expanded</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>expanded</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>extra-expanded</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>ultra-expanded</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Задает масштаб сжатия или расширения семейства шрифтов.
+          &quot;ultra-condensed&quot; является самым сжатым значением, а &quot;
+          ultra-expanded&quot; — самым широким</p></td>
+    </tr>
+  </table>
+  <p style='line-height:normal'><b>Пример</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>colspan=&quot;2&quot;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-stretch: extra-expanded</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>} </span></p>
+  <p style='line-height:normal'><b>Параметр
+    'font-style'</b></p>
+  <p style='line-height:normal'>Данный параметр задает стиль шрифта.</p>
+  <p style='line-height:normal'>Наследование: да.</p>
+  <p style='line-height:normal'>Возможные значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=539 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>normal</p></td>
+      <td width=539 valign=top><p style='line-height:
+  normal'>Браузер выводит обычный шрифт</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>italic</p></td>
+      <td width=539 valign=top><p style='line-height:
+  normal'>Браузер выводит шрифт курсивом</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>oblique</p></td>
+      <td width=539 valign=top><p style='line-height:
+  normal'>Браузер выводит наклонный шрифт</p></td>
+    </tr>
+  </table>
+  <p style='line-height:normal'>Пример:</p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>{</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>font-style: oblique</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>} </span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>h1</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>{</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>font-style: italic</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>}</span></p>
+  <p style='line-height:normal'><b>Параметр
+    'font-variant'</b></p>
+  <p style='line-height:normal'>Этот параметр используется для вывода текста
+    капителью: все символы нижнего регистра преобразуются в символы верхнего
+    регистра, при этом все символы шрифта капители имеют меньший размер по
+    сравнению с остальным текстом. </p>
+  <p style='line-height:normal'>Наследование: да.</p>
+  <p style='line-height:normal'>Может принимать следующие значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>normal</p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Браузер выводит обычный шрифт</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>small-caps</p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Браузер выводит шрифт капитель</p></td>
+    </tr>
+  </table>
+  <p style='line-height:normal'><b>Пример:</b></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>pre</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>{</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>font-variant: small-caps</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>} </span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>{</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>font-variant: normal</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>} </span></p>
+  <p style='line-height:normal'><b>Параметр
+    'font-weight'</b></p>
+  <p style='line-height:normal'>Данный параметр определяет степень жирности
+    символов в тексте при выводе.</p>
+  <p style='line-height:normal'>Наследование: да.</p>
+  <p style='line-height:normal'>Возможные значения:</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>normal</p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Определяет обычные символы</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>bold</p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Определяет жирные символы</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>bolder</p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Определяет более жирные символы</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>lighter</p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Определяет более тонкие символы</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>100</p>
+        <p style='line-height:
+  normal'>200</p>
+        <p style='line-height:
+  normal'>300</p>
+        <p style='line-height:
+  normal'>400</p>
+        <p style='line-height:
+  normal'>500</p>
+        <p style='line-height:
+  normal'>600</p>
+        <p style='line-height:
+  normal'>700</p>
+        <p style='line-height:
+  normal'>800</p>
+        <p style='line-height:
+  normal'>900</p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Определяет степень жирности символов. 400 соответствует normal, 700
+          соответствует bold</p></td>
+    </tr>
+  </table>
+  <p style='line-height:normal'><b>Пример:</b></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>h1</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>{</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>-</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>weight</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>: 200} </span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>2</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>{</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>-</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>weight</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>: </span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>bold</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>}</span></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Примеры:</b></p>
+  <p class=MsoListParagraph style='line-height:normal;'><span
+style='"Times New Roman"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать шрифт текста. </p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1 {font-family: courier}</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h2.font {font-family: sans-serif}</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>pre {font-family: times}</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;pre&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>применяется</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>шрифт</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> &quot;times&quot;&lt;/pre&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h1&gt;</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>заголовок</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> h1&lt;/h1&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h2 class=&quot;font&quot;&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>заголовок</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> h2&lt;/h2&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='line-height:normal;'><span
+style='"Times New Roman"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать размер шрифта. </p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;ol style=&quot;font-size:
+    200%&quot;&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;li&gt;first&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;li&gt;second&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/ol&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p style=&quot;font-size:
+    80%&quot;&gt;</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>текст</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>параграфа</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/p&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;ul style=&quot;font-size:
+    60%&quot;&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;li&gt;first&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;li&gt;second&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/ul&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/body&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='line-height:normal;'><span
+style='"Times New Roman"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать стиль шрифта. </p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:normal'><span lang=PL style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ol {font-style: normal}</span></p>
+  <p style='line-height:normal'><span lang=PL style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ul {font-style: oblique}</span></p>
+  <p style='line-height:normal'><span lang=PL style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p {font-style: italic}</span></p>
+  <p style='line-height:normal'><span lang=PL style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;p&gt;Текст параграфа. Текст параграфа. Текст параграфа.&lt;/p&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;ol&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;li&gt;первый пункт&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;li&gt;второй пункт&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;li&gt;третий пункт&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/ol&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;ul&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;li&gt;первый пункт&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;li&gt;второй пункт&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;li&gt;третий пункт&lt;/li&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/ul&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='line-height:normal;'><span
+style='"Times New Roman"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать вариант шрифта. </p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h1 style=&quot;font-variant:
+    small-caps&quot;&gt;</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>Заголовок</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> h1&lt;/h1&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h2 style=&quot;font-variant:
+    small-caps&quot;&gt;</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>Заголовок</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> h2&lt;/h2&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='line-height:normal;'><span
+style='"Times New Roman"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать степень жирности шрифта. </p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1.first {font-weight: 800}</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h2.second {font-weight: bold}</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h3.third {font-weight: 900}</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h1 class=&quot;first&quot;&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>заголовок</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> h1&lt;/h1&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h2 class=&quot;second&quot;&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>заголовок</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> h2&lt;/h2&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h3 class=&quot;third&quot;&gt;</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>заголовок</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> h3&lt;/h3&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='line-height:normal;'><span
+style='"Times New Roman"'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как использовать сокращенную запись для задания всех свойств
+    шрифта в одном объявлении. </p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font: oblique small-caps bold -5px serif</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>}</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/style&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;p&gt;параграф параграф параграф параграф параграф
+    параграф&lt;/p&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/html&gt;</span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%209.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%209.files/colorschememapping.xml">
+<style>
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+a:hover{color:red;text-decoration:none;}
+<!--
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.SpellE
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+ol
+	{ul
+	{-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1> <ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+  <p style='line-height:
+normal'><b>Параметры полей в CSS </b></p>
+  <p style='line-height:
+normal'>Определяют пространство между границей элемента и содержимым элемента,
+    для которого не предусмотрены отрицательные значения. Все поля (верхнее,
+    правое, нижнее и левое) можно изменять независимо друг от друга. Существует
+    также параметр <span class=SpellE>padding</span>, который позволяет определять
+    нескольких полей в одном объявлении.</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><b>Параметр</b></p></td>
+      <td width=369 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><b>Значения</b></p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><span class=SpellE>padding</span></p></td>
+      <td width=369 valign=top><p style='line-height:
+  normal'>Параметр для задания всех полей в одном объявлении</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span lang=EN-US>padding-top</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>padding-right</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>padding-bottom</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>padding-left</span></p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><span class=SpellE>padding-bottom</span></p></td>
+      <td width=369 valign=top><p style='line-height:
+  normal'>Задает нижнее поле элемента</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span lang=EN-US>l</span><span
+  class=SpellE>ength</span></p>
+        <p style='line-height:
+  normal'>%</p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><span class=SpellE>padding-left</span></p></td>
+      <td width=369 valign=top><p style='line-height:
+  normal'>Задает левое поле элемента</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span lang=EN-US>l</span><span
+  class=SpellE>ength</span></p>
+        <p style='line-height:
+  normal'>%</p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><span class=SpellE>padding-right</span></p></td>
+      <td width=369 valign=top><p style='line-height:
+  normal'>Задает правое поле элемента</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span lang=EN-US>l</span><span
+  class=SpellE>ength</span></p>
+        <p style='line-height:
+  normal'>%</p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><span class=SpellE>padding-top</span></p></td>
+      <td width=369 valign=top><p style='line-height:
+  normal'>Задает верхнее поле элемента</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span lang=EN-US>l</span><span
+  class=SpellE>ength</span></p>
+        <p style='line-height:
+  normal'>%</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Примеры</b>:</p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> {<span class=SpellE>padding</span>: 2px}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>для
+    всех четырех сторон будет задано поле 2px. </span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> {<span class=SpellE>padding</span>: 5% 2px}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>верхнее
+    и нижнее поле будет 5%, левое и правое поле будет составлять 2px от ширины
+    ближайшего элемента.</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> {<span class=SpellE>padding</span>: 2px 7px 5%}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>верхнее
+    поле будет 2px, левое и правое поле будет составлять 7px от ширины ближайшего
+    элемента, нижнее поле будет 5%.</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p {padding: 2px 5% 7px 5px}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>верхнее
+    поле будет 2px, правое поле будет 5% от ширины ближайшего элемента, нижнее поле
+    будет 7px, левое поле будет 5px.</span></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Примеры</b></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать левое поле элементов списка. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>li</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {padding-left: 0.5cm}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать правое поле элементов списка. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>li</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {padding-right: 3cm}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать верхнее поле элементов списка. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>li</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {padding-top: 1cm}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать нижнее поле элементов списка. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>li</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {padding-bottom: 2.5cm}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Пример
+    показывает, как с помощью параметра <span class=SpellE>padding</span> задать
+    все поля в одном объявлении. Допускается определение от одного до четырех
+    значений. </p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>style</span> <span class=SpellE>type=</span>&quot;<span
+class=SpellE>text</span>/<span class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>li.first</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {padding: 2.5cm}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>li.second</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {padding: 1cm 2cm}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>style</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>first</span>&quot;&gt;элемент списка с одинаковыми полями со всех
+    сторон&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;элемент списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>second</span>&quot;&gt;элемент списка, который имеет верхнее и
+    нижнее поле, равное 1 см, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>а
+    левое и правое поля — равные 2 см&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+</div>
+</body>
+</html>

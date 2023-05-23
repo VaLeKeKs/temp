@@ -1,0 +1,549 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%208.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%208.files/colorschememapping.xml">
+<style>
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+a:hover{color:red;text-decoration:none;}
+<!--
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.SpellE
+span.GramE
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+ol
+	{ul
+	{-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1> <ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+  <p style='line-height:
+normal'><b>Отступы в CSS </b></p>
+  <p style='line-height:
+normal'>Они определяют пространство вокруг элементов. Допускают использование
+    отрицательных значений для того, чтобы создавать наложение содержимого. Все
+    отступы (верхний, правый, нижний и левый) можно изменять независимо, используя
+    отдельные параметры, а можно использовать параметр <span class=SpellE>margin</span> для изменения всех отступов одновременно. </p>
+  <p style='line-height:
+normal'><span class=GramE>Отступы</span> заданные по умолчанию в браузерах:</p>
+  <p style='line-height:
+normal'><span lang=EN-US>Netscape </span>и <span lang=EN-US>Internet Explorer — </span>тег <span lang=EN-US>body </span>имеет отступ<span lang=EN-US>, </span>равный<span lang=EN-US> 8px. </span><span class=SpellE>Opera</span> вместо этого использует по умолчанию поле величиной 8px. </p>
+  <p style='line-height:
+normal'>Таким образом, если требуется настроить отступы для всей страницы,
+    чтобы они правильно выводились в <span class=SpellE>Opera</span>, то для <span
+class=SpellE>body</span> необходимо задать также поле!</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=111 valign=top><p style='line-height:
+  normal'><b>Параметр</b></p></td>
+      <td width=378 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><b>Значения</b></p></td>
+    </tr>
+    <tr>
+      <td width=111 valign=top><p style='line-height:
+  normal'><span class=SpellE>margin</span></p></td>
+      <td width=378 valign=top><p style='line-height:
+  normal'>Параметр для задания отступов в одном объявлении</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span lang=EN-US>margin-top</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>margin-right</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>margin-bottom</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>margin-left</span></p></td>
+    </tr>
+    <tr>
+      <td width=111 valign=top><p style='line-height:
+  normal'><span class=SpellE>margin-bottom</span></p></td>
+      <td width=378 valign=top><p style='line-height:
+  normal'>Задает нижний отступ элемента</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span class=SpellE>auto</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>length</span></p>
+        <p style='line-height:
+  normal'>%</p></td>
+    </tr>
+    <tr>
+      <td width=111 valign=top><p style='line-height:
+  normal'><span class=SpellE>margin-left</span></p></td>
+      <td width=378 valign=top><p style='line-height:
+  normal'>Задает левый отступ элемента</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span class=SpellE>auto</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>length</span></p>
+        <p style='line-height:
+  normal'>%</p></td>
+    </tr>
+    <tr>
+      <td width=111 valign=top><p style='line-height:
+  normal'><span class=SpellE>margin-right</span></p></td>
+      <td width=378 valign=top><p style='line-height:
+  normal'>Задает правый отступ элемента</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span class=SpellE>auto</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>length</span></p>
+        <p style='line-height:
+  normal'>%</p></td>
+    </tr>
+    <tr>
+      <td width=111 valign=top><p style='line-height:
+  normal'><span class=SpellE>margin-top</span></p></td>
+      <td width=378 valign=top><p style='line-height:
+  normal'>Задает верхний отступ элемента</p></td>
+      <td width=118 valign=top><p style='line-height:
+  normal'><span class=SpellE>auto</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>length</span></p>
+        <p style='line-height:
+  normal'>%</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Пример 1:</b></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> {<span class=SpellE>margin</span>: 2px}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>все
+    четыре отступа будут иметь отступ, равный 2px.</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> {<span class=SpellE>margin</span>: 5px 10%}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>верхний
+    и нижний отступ будут по 5px, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>левый
+    и правый отступ будут составлять 10% общей ширины документа.</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> {<span class=SpellE>margin</span>: 5px 10% -2px}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>верхний
+    отступ будет равен 5px, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>левый
+    и правый отступ будут составлять 10% общей ширины документа, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>нижний
+    отступ будет равен 2px.</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {margin: 5px 10% -2px auto}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>верхний
+    отступ будет 5px, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>правый
+    отступ будет составлять 10% общей ширины документа, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>нижний
+    отступ будет 2px, левый отступ будет задан браузером.</span></p>
+  <p style='line-height:
+normal'><b>Пример</b><b><span lang=EN-US> 2:</span></b></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>margin-bottom</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: 5%</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>margin-bottom</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: auto</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><b>Пример</b><b><span lang=EN-US> 3:</span></b></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>margin-left</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: 2%</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>margin-left</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: -5px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><b>Пример</b><b><span lang=EN-US> 4:</span></b></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>margin-right</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: 2px</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>margin-right</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: 10%</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><b>Пример</b><b><span lang=EN-US>5:</span></b></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>margin-top</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: auto</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>margin-top</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: -5px</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Примеры</b></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать для текста левый отступ. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1.lf {margin-left: 1cm}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h1&gt;</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>Заголовок</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> h1 </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>без</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>отступов</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;h1 <span class=SpellE>class=</span>&quot;<span class=SpellE>lf</span>&quot;&gt;Заголовок
+    h1 с отступами&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать для текста правый отступ. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h2.rg {margin-right: 400px}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h2&gt; </span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Заголовок</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> h2 </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>без</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>отступов</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> &lt;/h2&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;h2 <span class=SpellE>class=</span>&quot;<span class=SpellE>rg</span>&quot;&gt;
+    Заголовок h2 с <span class=SpellE><span class=GramE>с</span></span> заданным
+    правым отступом&lt;/h2&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать для текста верхний отступ. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1.tp {margin-top: 50px}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h1&gt;</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>Заголовок</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> h1 </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>без</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>отступов</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> &lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;h1 <span class=SpellE>class=</span>&quot;<span class=SpellE>tp</span>&quot;&gt;
+    Заголовок h1 с заданным верхним отступом&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать нижний отступ текста. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h2.btm {margin-bottom: 1cm}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h2&gt;</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>Заголовок</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> h2 </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>без</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>отступов</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/h2&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;h2 <span class=SpellE>class=</span>&quot;<span class=SpellE>btm</span>&quot;&gt;Заголовок
+    h2 с заданным нижним отступом&lt;/h2&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;h2&gt;Заголовок
+    h2 без отступов&lt;/h2&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать параметры всех отступов в одном объявлении. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1.all {margin: 1cm 2cm 1cm 2cm}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h1&gt;</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>Заголовок</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> h1 </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>без</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>отступов</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;h1 <span class=SpellE>class=</span>&quot;<span class=SpellE>all</span>&quot;&gt;Заголовок
+    h1 с заданными отступами&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;h1&gt;Заголовок
+    h1 без отступов&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+</div>
+</body>
+</html>

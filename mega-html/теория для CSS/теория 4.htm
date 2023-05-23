@@ -1,0 +1,1039 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%204.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%204.files/colorschememapping.xml">
+<style>
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+a:hover{color:red;text-decoration:none;}
+<!--
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+ol
+	{ul
+	{-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1> 
+<ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+ 
+<p align=center style='
+text-align:center;line-height:normal'><b>Параметры
+    фона в </b><b><span lang=EN-US>CSS</span>: подробное рассмотрение</b></p>
+  <p style='line-height:normal'>Как было показано ранее, параметры фона в <span
+lang=EN-US>CSS</span> позволяют управлять
+    цветом фона элемента, задавать в качестве фона изображение, повторять
+    циклически фоновое изображение вертикально или горизонтально и позиционировать
+    изображение на странице.</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=102 valign=top><p style='line-height:
+  normal'><b>Параметр</b></p></td>
+      <td width=340 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+      <td width=175 valign=top><p style='line-height:
+  normal'><b>Значения</b></p></td>
+    </tr>
+    <tr>
+      <td width=102 valign=top><p style='line-height:
+  normal'>background</p></td>
+      <td width=340 valign=top><p style='line-height:
+  normal'>Служит для задания всех параметров фона в одном объявлении</p></td>
+      <td width=175 valign=top><p style='line-height:
+  normal'><span lang=EN-US>background-color</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>background-image</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>background-repeat</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>background-attachment</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>background-position</span></p></td>
+    </tr>
+    <tr>
+      <td width=102 valign=top><p style='line-height:
+  normal'>background-attachment</p></td>
+      <td width=340 valign=top><p style='line-height:
+  normal'>Задает для изображения фиксированное расположение или перемещающееся
+          вместе с остальной страницей</p></td>
+      <td width=175 valign=top><p style='line-height:
+  normal'>scroll</p>
+        <p style='line-height:
+  normal'>fixed</p></td>
+    </tr>
+    <tr>
+      <td width=102 valign=top><p style='line-height:
+  normal'>background-color</p></td>
+      <td width=340 valign=top><p style='line-height:
+  normal'>Задает цвет фона элемента</p></td>
+      <td width=175 valign=top><p style='line-height:
+  normal'><span lang=EN-US>color-rgb</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>color-hex</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>color-name</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>transparent</span></p></td>
+    </tr>
+    <tr>
+      <td width=102 valign=top><p style='line-height:
+  normal'>background-image</p></td>
+      <td width=340 valign=top><p style='line-height:
+  normal'>Задает в качестве фона изображение</p></td>
+      <td width=175 valign=top><p style='line-height:
+  normal'>url</p>
+        <p style='line-height:
+  normal'>none</p></td>
+    </tr>
+    <tr>
+      <td width=102 valign=top><p style='line-height:
+  normal'>background-position</p></td>
+      <td width=340 valign=top><p style='line-height:
+  normal'>Задает начальное положение фонового изображения</p></td>
+      <td width=175 valign=top><p style='line-height:
+  normal'><span lang=EN-US>top left</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>top center</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>top right</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>center left</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>center center</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>center right</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>bottom left</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>bottom center</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>bottom right</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>x-% y-%</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>x-pos y-pos</span></p></td>
+    </tr>
+    <tr>
+      <td width=102 valign=top><p style='line-height:
+  normal'>background-repeat</p></td>
+      <td width=340 valign=top><p style='line-height:
+  normal'>Определяет, будет ли и каким образом будет повторяться фоновое
+          изображение</p></td>
+      <td width=175 valign=top><p style='line-height:
+  normal'><span lang=EN-US>repeat</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>repeat-x</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>repeat-y</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>no-repeat</span></p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Параметр '</b><b><span lang=EN-US>background</span>'</b></p>
+  <p style='line-height:
+normal'>Этот параметр предназначен для задания всех свойств фона в одном
+    объявлении.</p>
+  <p style='line-height:
+normal'><b>Наследование</b>: нет.</p>
+  <p style='line-height:
+normal'><b>Примеры</b>:</p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>body</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>: </span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>url</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>(</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>picture</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>.</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>gif</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>)</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>body</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background:
+    url(http://www.intuit.ru/speciality/image.gif) repeat scroll</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>body</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background: yellow
+    url(http://www.intuit.ru/speciality/image.gif) repeat-x bottom</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>} </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US>Может принимать
+    следующие значения:</span></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>background-color</p></td>
+      <td width=319 rowspan=5 valign=top><p style='line-height:
+  normal'>В этом объявлении можно задать от одного до пяти свойств фона</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>background-image</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>background-repeat</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>background-attachment</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>background-position</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'>Рассмотрим их подробнее.</p>
+  <p style='line-height:
+normal'><b>Параметр 'background-attachment'</b></p>
+  <p style='line-height:
+normal'>Этот параметр определяет, будет ли фоновое изображение зафиксировано в
+    определенном месте или будет перемещаться вместе со всей страницей. </p>
+  <p style='line-height:
+normal'><b>Наследование</b>: нет.</p>
+  <p style='line-height:
+normal'><b>Может принимать следующие
+    значения:</b></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=529 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top bgcolor="#D9D9D9"><p style='line-height:
+  normal'>Scroll</p></td>
+      <td width=529 valign=top bgcolor="#D9D9D9"><p style='line-height:
+  normal'>Фоновое изображение перемещается, когда перемещается страница</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top bgcolor="#D9D9D9"><p style='line-height:
+  normal'>Fixed</p></td>
+      <td width=529 valign=top bgcolor="#D9D9D9"><p style='line-height:
+  normal'>Фоновое изображение не перемещается, когда перемещается страница</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Пример</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>body </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-attachment: fixed;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: repeat </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><b>Параметр '</b><b><span lang=EN-US>background</span>-</b><b><span
+lang=EN-US>color</span>'</b></p>
+  <p style='line-height:
+normal'>Этот параметр задает фоновый цвет элемента.</p>
+  <p style='line-height:
+normal'><b>Наследование</b>: нет.</p>
+  <p style='line-height:
+normal'><b>Может принимать следующие
+    значения:</b></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=92 valign=top bgcolor="#BFBFBF"><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=520 valign=top bgcolor="#BFBFBF"><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top bgcolor="#D9D9D9"><p style='line-height:
+  normal'>color</p></td>
+      <td width=520 valign=top bgcolor="#D9D9D9"><p style='line-height:
+  normal'>Значение color может быть названием цвета (red), значением rgb
+          (rgb(255,0,0)) или шестнадцатеричным числом (#ff0000)</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top bgcolor="#D9D9D9"><p style='line-height:
+  normal'>transparent</p></td>
+      <td width=520 valign=top bgcolor="#D9D9D9"><p style='line-height:
+  normal'>Фоновый цвет является прозрачным</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Пример:</b></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>h1</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{ </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>background-color:
+    gray;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>font-family:
+    arial</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><b>Параметр 'background-image'</b></p>
+  <p style='line-height:
+normal'>Данный параметр задает изображение в качестве фона.</p>
+  <p style='line-height:
+normal'><b>Наследование</b>: нет.</p>
+  <p style='line-height:
+normal'><b>Может принимать следующие
+    значения:</b></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>url</p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Путь доступа к изображению</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'>none</p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Фонового изображения нет</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Пример:</b></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>body</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image:
+    url(http://www.intuit.ru/speciality/image.gif); </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: repeat;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-attachment: fixed</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'>В тех случаях, когда изображение недоступно, необходимо задать цвет
+    background-color, который будет использован.</p>
+  <p style='line-height:
+normal'><b>Параметр 'background-position' </b></p>
+  <p style='line-height:
+normal'>Этот параметр задает начальное положение фонового изображения.</p>
+  <p style='line-height:
+normal'><b>Наследование</b>: нет.</p>
+  <p style='line-height:
+normal'><b>Может принимать следующие
+    значения:</b></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=491 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'><span lang=EN-US>top left </span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>top center</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>top right</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>center left</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>center center</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>center right</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>bottom left</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>bottom center</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>bottom right</span></p></td>
+      <td width=491 valign=top><p style='line-height:
+  normal'>Если определить только одно ключевое слово, то вторым значением
+          подразумевается &quot;center&quot;</p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'>x-% y-%</p></td>
+      <td width=491 valign=top><p style='line-height:
+  normal'>Первое значение является горизонтальной координатой, второе значение
+          — вертикальной. Верхний левый угол — 0% 0%. Правый нижний угол — 100% 100%.
+          Если определено только одно значение, то вторым значением подразумевается
+          50%.</p></td>
+    </tr>
+    <tr>
+      <td width=121 valign=top><p style='line-height:
+  normal'>x-pos y-pos</p></td>
+      <td width=491 valign=top><p style='line-height:
+  normal'>Первое значение является горизонтальной координатой, второе значение
+          — вертикальной. Верхний левый угол — 0 0. Единицами измерения могут быть
+          пиксели (0px 0px) или любые другие единицы измерения CSS. Если определено
+          только одно значение, то вторым значением подразумевается 50%. Можно
+          смешивать % и эти координаты.</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Пример</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>body</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image:
+    url(http://www.intuit.ru/speciality/image.gif);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-position: right top;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-attachment: fixed</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>body</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image:
+    url(http://www.intuit.ru/speciality/image.gif);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: no-repeat;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-position: 100% 100%;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-attachment: fixed</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><b>Параметр</b><b><span lang=EN-US> 'background-repeat'</span></b></p>
+  <p style='line-height:
+normal'>Этот параметр определяет, каким образом будет повторяться фоновое
+    изображение.</p>
+  <p style='line-height:
+normal'><b>Наследование</b>: нет.</p>
+  <p style='line-height:
+normal'><b>Может принимать следующие
+    значения:</b></p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>repeat</p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Фоновое изображение будет повторяться по вертикали и по горизонтали</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>repeat-x</p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Фоновое изображение будет повторяться по горизонтали</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>repeat-y</p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Фоновое изображение будет повторяться по вертикали</p></td>
+    </tr>
+    <tr>
+      <td width=83 valign=top><p style='line-height:
+  normal'>no-repeat</p></td>
+      <td width=510 valign=top><p style='line-height:
+  normal'>Фоновое изображение будет выведено только один раз</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Пример</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>body</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image:
+    url(http://www.intuit.ru/departament/image.gif);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: repeat;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-attachment: fixed}</span></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Примеры</b></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Данный
+    пример показывает, как задать фоновый цвет элемента. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ul {background-color: rgb(200,10,200)}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ol {background-color: #00FFFF}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>li {background-color: transparent}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p {background-color: blue}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;ul&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;li&gt;this is ul&lt;/li&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/ul&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;ol&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;li&gt;this is ol&lt;/li&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/ol&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;This is a paragraph&lt;/p&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Данный
+    пример показывает, как задать в качестве фона изображение. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>body </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image:</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>url(http://www.intuit.ru/departament/picture.jpg)</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>style</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>head</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>body</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>В
+    документе в качестве фона использовано изображение</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Данный
+    пример показывает, как использовать повторяющееся фоновое изображение. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>body</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>url(http://www.intuit.ru/departament/picture.jpg);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: repeat</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>В
+    документе в качестве фона использовано повторяющееся изображение</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Данный
+    пример показывает, как использовать повторяющееся только по вертикали фоновое
+    изображение. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>body</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>url(http://www.intuit.ru/departament/picture.jpg);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: repeat-y</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>В
+    документе в качестве фона использовано повторяющееся изображение, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>которое
+    размножается только вертикально</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Данный
+    пример показывает, как использовать повторяющееся только по горизонтали фоновое
+    изображение. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>body</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>url(http://www.intuit.ru/departament/picture.jpg);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: repeat-x</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>В
+    документе в качестве фона использовано повторяющееся изображение, </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>которое
+    размножается только горизонтально.</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Данный
+    пример показывает, как разместить на странице фоновое изображение. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>body</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>url(http://www.intuit.ru/departament/picture.jpg);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> repeat;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-position: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> bottom; </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt; </span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Данный
+    пример показывает, как задать фиксированное фоновое изображение, т.е.
+    изображение, которое не будет перемещаться вместе со всей остальной страницей. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>body </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>url(http://www.intuit.ru/departament/picture.jpg);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>no-repeat;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-attachment: </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>fixed</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Определено
+    фиксированное фоновое изображение&lt;br&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Определено
+    фиксированное фоновое изображение&lt;br&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Определено
+    фиксированное фоновое изображение&lt;br&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Данный
+    пример показывает, как задать прокручивающееся фоновое изображение, т.е.
+    изображение, которое будет прокручиваться вместе с документом. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>body </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-image: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>url(http://www.intuit.ru/departament/picture.jpg);</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-repeat: </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>no-repeat;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background-attachment: </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>scroll</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Определено
+    прокручивающееся фоновое изображение&lt;br&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Определено
+    прокручивающееся фоновое изображение&lt;br&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Определено
+    прокручивающееся фоновое изображение&lt;br&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt; </span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Данный
+    пример показывает, как использовать свойство сокращения записи для задания всех
+    свойств фона в одном объявлении. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;html&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/css&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>body</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{ </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>background: blue
+    url(http://www.intuit.ru/departament/picture.jpg) repeat scroll center; </span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Это
+    документ, для которого свойства фона заданы в одном объявлении&lt;br&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Это
+    документ, для которого свойства фона заданы в одном объявлении&lt;br&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Это
+    документ, для которого свойства фона заданы в одном объявлении&lt;br&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/html&gt; </span></p>
+  <p style='line-height:
+normal'>Итак, можно определить фоновый цвет элемента, а также в качестве фона —
+    изображение, повторяющееся изображение, повторяющееся изображение (только
+    вертикально или только горизонтально), фиксированное или прокручивающееся
+    изображение. Кроме того, можно использовать свойство сокращения записи для
+    задания всех свойств фона в одном объявлении.</p>
+</div>
+</body>
+</html>

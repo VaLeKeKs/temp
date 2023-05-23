@@ -1,0 +1,365 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%202.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%202.files/colorschememapping.xml">
+
+
+
+<style>
+a:hover{color:red;text-decoration:none;}
+<!--
+span.SpellE
+span.GramE
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+-->
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+</style>
+
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1> 
+<ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+
+  <p style='line-height:normal'><b>Синтаксис</b></p>
+  <p style='line-height:normal'>Синтаксис CSS состоит из трех частей: селектора,
+    свойства и значения:</p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>селектор {свойство: значение}</span></p>
+  <p style='line-height:normal'>Селектор — элемент/тег HTML, который необходимо
+    определить. Свойство — атрибут, который желательно изменить. Каждое свойство
+    может принимать значение. Существует ряд правил и рекомендаций, которые
+    необходимо запомнить.</p>
+  <p style='line-height:normal'>Свойство и значение разделяются двоеточием и
+    помещаются внутри фигурных скобок: </p>
+  <p style='line-height:normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> {<span class=SpellE>font-size</span>: 75%}</span></p>
+  <p style='line-height:normal'>Если значение состоит из нескольких слов, то
+    необходимо поместить значение в кавычки: </p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1 {font-family: &quot;<span
+class=SpellE>lucida</span> calligraphy&quot;}</span></p>
+  <p style='line-height:normal'>Если <span class=GramE>требуется определить более
+    одного свойства</span>, то необходимо разделить свойства точкой с запятой: </p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>table</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> { font-family: <span class=SpellE>arial</span>,
+    &quot;sans serif&quot;; border-style: dotted}</span></p>
+  <p style='line-height:normal'>Чтобы определения стилей было удобно читать, можно
+    каждое свойство писать на отдельной строке: </p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h2</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>font-family</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>: <span class=SpellE>arial</span>; </span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>margin-right</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>: 20pt; </span></p>
+  <p style='line-height:normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>color:#ffffff</span></span><span class=GramE><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'> }</span></span></p>
+  <p style='line-height:normal'>При определении правил допускается группировка
+    селекторов, при этом в качестве разделителя селекторов используется запятая. В
+    следующем примере в группу были объединены все элементы абзацев, таблиц и
+    списков. Все эти элементы будут выведены шрифтом <span class=SpellE>sans</span> <span class=SpellE>serif</span>: </p>
+  <p style='line-height:normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>p,table,li</span></span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>font-family</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>: &quot;sans serif&quot;;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:normal'><b>Селектор</b><b> класса</b><b><span lang=EN-US> (class)</span></b></p>
+  <p style='line-height:normal'>При Web-разработке часто возникает необходимость в
+    задании различных стилей для одного и того же типа элемента HTML. Для решения
+    этой задачи используют селектор класса.</p>
+  <p style='line-height:normal'>Предположим, что в документе требуется два типа
+    заголовков: более крупный заголовок должен иметь внешний отступ 10 пунктов, а
+    второй — 20 пунктов. Вот как это можно сделать с помощью стилей: </p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>h1.stepleft {<span class=SpellE>margin-left</span>: 10pt}</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h2.stepright {margin-left: 20pt}</span></p>
+  <p style='line-height:normal'>Для применения этих стилей в документе HTML
+    необходимо будет использовать атрибут класс:</p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;h1 <span class=SpellE>class=</span>&quot;<span class=SpellE>stepleft</span>&quot;&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>Заголовок с внешним отступом 10 пунктов.</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/h1&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;h2 <span class=SpellE>class=</span>&quot;<span class=SpellE>stepright</span>&quot;&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>Заголовок с внешним отступом 20 пунктов.</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/h2&gt;</span></p>
+  <p style='line-height:normal'>В то же время не допускается следующее определение
+    атрибута <span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>class</span></span>:</p>
+  <p style='line-height:normal'><span lang=EN-US>&lt; </span><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> class=&quot;<span class=SpellE>stepleft</span>&quot; h2 class=&quot;<span
+class=SpellE>stepright</span>&quot;&gt;,</span></p>
+  <p style='line-height:normal'>т.е. можно определить только один атрибут <span
+class=SpellE><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>class</span></span></p>
+  <p style='line-height:normal'>Можно также опустить имя тега в селекторе, чтобы
+    определить стиль, который будет использоваться всеми элементами HTML, имеющими
+    определенный <span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>class</span></span>.</p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>.<span class=SpellE>left</span> {<span class=SpellE>margin-left</span>:
+    40pt}</span></p>
+  <p style='line-height:normal'>В следующем примере все элементы HTML, имеющие <span
+class=SpellE><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>class=</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>&quot;<span
+class=SpellE>left</span>&quot;</span>, будут иметь внешний отступ, равный 40
+    пунктам.</p>
+  <p style='line-height:normal'>В следующем коде элементы <span class=SpellE><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>table</span></span> и <span class=SpellE>p</span> имеют <span class=SpellE><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>class=</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>&quot;<span
+class=SpellE>left</span>&quot;</span>. Это означает, что оба элемента будут
+    следовать правилам в селекторе <span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&quot;.<span class=SpellE>left</span>&quot;</span>: </p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;<span class=SpellE>table</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>left</span>&quot;&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>Эта таблица будет иметь внешний отступ, равный 40 пунктам. </span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/<span class=SpellE>table</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;<span class=SpellE>p</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>left</span>&quot;&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>Этот параграф будет иметь внешний отступ, равный 40 пунктам.</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/<span class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:normal'>Для корректности обработки кода браузерами не
+    рекомендуется начинать имя класса с числа, т.к. это не будет работать в <span
+class=SpellE>Mozilla</span>/<span class=SpellE>Firefox</span>.</p>
+  <p style='line-height:normal'><b>Селектор
+    идентификатора (<span class=SpellE>id</span>)</b></p>
+  <p style='line-height:normal'>Стили элементов HTML можно определить также с
+    помощью селектора идентификатора, который определяется символом #. </p>
+  <p style='line-height:normal'>Следующее правило стиля будет применимо к элементу,
+    который имеет атрибут <span class=SpellE>id</span> со значением &quot;<span
+class=SpellE>fontsz</span>&quot;:</p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>#<span class=SpellE>fontsz</span>{<span class=SpellE>font-size</span>:
+    50%}</span></p>
+  <p style='line-height:normal'>Следующее правило стиля будет применимо к элементу <span
+class=SpellE>ul</span>, который имеет атрибут <span class=SpellE>id</span> со
+    значением &quot;<span class=SpellE>first</span>&quot;:</p>
+  <p style='line-height:normal'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>ul#</span></span><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>first</span></span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>list-style</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>: disc;</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>color</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>: #</span><span class=SpellE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>ffffff</span></span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>}</span></p>
+  <p style='line-height:normal'>Для корректности обработки кода браузерами не
+    рекомендуется начинать имя ID с числа, т.к. это не будет работать в <span
+class=SpellE>Mozilla</span>/<span class=SpellE>Firefox</span>.</p>
+  <p style='line-height:normal'><b>Комментарии
+    CSS</b></p>
+  <p style='line-height:normal'>Для пояснения кода и для последующего его
+    редактирования используются комментарии, которые игнорируются браузерами.
+    Комментарий CSS начинается символом &quot;/*&quot; и заканчивается символом
+    &quot;*/&quot;, как в примере ниже:</p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> /* Первый комментарий. */</span></p>
+  <p style='line-height:normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>table</span></span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>{</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>/* Второй комментарий. </span><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>*/</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>margin-left</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>: 10pt;</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>font-family</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>: &quot;sans serif&quot;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>/* Третий комментарий. */</span></p>
+  <p style='line-height:normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>border-style:outset</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>; </span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>}</span></p>
+  <p style='line-height:normal'><b>Примеры
+    использования CSS</b></p>
+  <p style='line-height:normal'>Рассмотрим несколько примеров использования CSS:</p>
+  <p style='line-height:normal'>Технология CSS позволяет связываться с внешней
+    таблицей стилей. Для этого в файле HTML применяют тег &lt;<span class=SpellE>link</span>&gt;: </p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;link <span class=SpellE>rel</span>=&quot;<span
+class=SpellE>stylesheet</span>&quot; type=&quot;text/<span class=SpellE>css</span>&quot; </span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>  <span
+class=SpellE><span class=GramE>href</span></span>=&quot;…/style.css&quot;&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;</span><span class=SpellE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>ol</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>&gt;&lt;!—Список
+    имеет внешний отступ в 10 пунктов<span class=GramE> --&gt;</span></span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;<span class=SpellE>li</span>&gt;для этого элемента списка
+    будет задан шрифт &quot;<span class=SpellE>arial</span>&quot;&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;<span class=SpellE>li</span>&gt;для этого элемента списка
+    будет задан шрифт &quot;<span class=SpellE>arial</span>&quot;&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/<span class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;<span class=SpellE>ul</span>&gt;&lt;!—Список имеет внешний
+    отступ в 20 пунктов<span class=GramE> --&gt;</span></span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;<span class=SpellE>li</span>&gt;для этого элемента списка
+    будет задан шрифт &quot;<span class=SpellE>arial</span>&quot;&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;<span class=SpellE>li</span>&gt;для этого элемента списка
+    будет задан шрифт &quot;<span class=SpellE>arial</span>&quot;&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/<span class=SpellE>ul</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/<span class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/<span class=SpellE>html</span>&gt;</span></p>
+  <p style='line-height:normal'>Внешний файл содержит следующее описание стилей (<span
+class=SpellE>style.css</span>):</p>
+  <p style='line-height:normal'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>ol</span></span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {margin-left: 10pt}</span></p>
+  <p style='line-height:normal'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>ul</span></span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {margin-right: 20pt}</span></p>
+  <p style='line-height:normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>li</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> {<span class=SpellE>font-family</span>: <span class=SpellE>arial</span>}</span></p>
+  <p style='line-height:normal'>Следующий файл HTML связывается с внешней таблицей
+    стилей с помощью тега &lt;<span class=SpellE>link</span>&gt;:</p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;link <span class=SpellE>rel</span>=&quot;<span
+class=SpellE>stylesheet</span>&quot; type=&quot;text/<span class=SpellE>css</span>&quot;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>   <span class=SpellE><span class=GramE>href</span></span>=&quot;…/style2.css&quot;&gt;:</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>table</span>&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=SpellE><span
+class=GramE>tr</span></span>&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>td&gt;</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Ячейка</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> 1&lt;/td&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>td&gt;</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Ячейка</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> 2&lt;/td&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/<span class=SpellE><span
+class=GramE>tr</span></span>&gt;</span></p>
+  <p style='line-height:normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/table&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;<span class=SpellE>a</span> <span class=SpellE>href=</span>&quot;http://www.</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>mail</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>.<span class=SpellE>ru</span>&quot;&gt;Здесь размещена
+    ссылка&lt;/<span class=SpellE>a</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/<span class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:normal'><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/<span class=SpellE>html</span>&gt;</span></p>
+  <p style='line-height:normal'>Внешний файл содержит следующее описание стилей
+    (style2.css): </p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>body</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> {background-color: #FFFFFF}</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>table</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> {margin-left: 10pt;}</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>td</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> {font-size:10pt; color: blue}</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>a:</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>link     {<span class=SpellE>color:blue</span>}</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>a:</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>visited  {<span class=SpellE>color:brown</span>}</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>a:</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>hover    {<span class=SpellE>color:lime</span>}</span></p>
+  <p style='line-height:normal'><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>a:</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>active   {<span class=SpellE>color:gray</span>}</span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,985 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%2010.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%2010.files/colorschememapping.xml">
+<style>
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+a:hover{color:red;text-decoration:none;}
+<!--
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.SpellE
+span.GramE
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+ol
+	{ul
+	{-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1> <ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Параметры
+    списков в CSS</b></p>
+  <p style='line-height:
+normal'>Как было отмечено выше, параметры списков в CSS позволяют разместить и
+    изменять маркеры элементов списка, задавать изображение в качестве маркера
+    элемента списка.</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><b>Параметр</b></p></td>
+      <td width=321 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+      <td width=170 valign=top><p style='line-height:
+  normal'><b>Значения</b></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>list-style</span></p></td>
+      <td width=321 valign=top><p style='line-height:
+  normal'>Параметр для задания всех характеристик списка в одном объявлении</p></td>
+      <td width=170 valign=top><p style='line-height:
+  normal'><span class=SpellE>list-style-type</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>list-style-position</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>list-style-image</span></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>list-style-image</span></p></td>
+      <td width=321 valign=top><p style='line-height:
+  normal'>Задает изображение в качестве маркера элемента списка</p></td>
+      <td width=170 valign=top><p style='line-height:
+  normal'><span class=SpellE>None</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>url</span></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>list-style-position</span></p></td>
+      <td width=321 valign=top><p style='line-height:
+  normal'>Задает размещение в списке маркера элемента списка</p></td>
+      <td width=170 valign=top><p style='line-height:
+  normal'><span class=SpellE><span lang=EN-US>i</span>nside</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>outside</span></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>list-style-type</span></p></td>
+      <td width=321 valign=top><p style='line-height:
+  normal'>Задает тип маркера элемента списка</p></td>
+      <td width=170 valign=top><p style='line-height:
+  normal'><span lang=EN-US>none</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>disc</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>circle</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>square</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>decimal</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>decimal-leading-zero</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>lower-roman</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>upper-roman</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>lower-alpha</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>upper-alpha</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>lower-<span
+  class=SpellE>greek</span></span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>lower-<span
+  class=SpellE>latin</span></span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>upper-<span
+  class=SpellE>latin</span></span></p>
+        <p style='line-height:
+  normal'><span class=SpellE><span lang=EN-US>hebrew</span></span></p>
+        <p style='line-height:
+  normal'><span class=SpellE><span lang=EN-US>armenian</span></span></p>
+        <p style='line-height:
+  normal'><span class=SpellE><span lang=EN-US>georgian</span></span></p>
+        <p style='line-height:
+  normal'><span class=SpellE><span lang=EN-US>cjk</span></span><span
+  lang=EN-US>-ideographic</span></p>
+        <p style='line-height:
+  normal'><span lang=PL>hiragana</span></p>
+        <p style='line-height:
+  normal'><span lang=PL>katakana</span></p>
+        <p style='line-height:
+  normal'><span lang=PL>hiragana-iroha</span></p>
+        <p style='line-height:
+  normal'><span lang=PL>katakana-iroha</span></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>marker-offset</span></p></td>
+      <td width=321 valign=top>&nbsp;</td>
+      <td width=170 valign=top><p style='line-height:
+  normal'><span lang=EN-US>a</span><span
+  class=SpellE>uto</span></p>
+        <p style='line-height:
+  normal'><span lang=EN-US>length</span></p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Параметр '<span class=SpellE>list-style</span>'</b></p>
+  <p style='line-height:
+normal'>Данный параметр определяет все характеристики списка в одном
+    объявлении.</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'><span class=SpellE>list-style</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>list-style-type</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>list-style-position</span></p>
+        <p style='line-height:
+  normal'><span class=SpellE>list-style-image</span></p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Задает характеристики списка</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Пример</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>ol</span></span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>list-style</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: square inside <span class=SpellE>url</span>(&quot;www.intuit.ru/departament/image.gif&quot;)</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>} </span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>ul</span></span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>list-style</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: circle inside</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><b>Параметр '<span class=SpellE>list-style-image</span>'</b></p>
+  <p style='line-height:
+normal'>Данный параметр позволяет заменить маркер элемента списка указанным
+    изображением. Необходимо определять параметр &quot;<span class=SpellE>list-style-type</span>&quot;
+    на тот случай, если изображение будет недоступно.</p>
+  <table border=1 cellspacing=0 cellpadding=0 width=640>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'><span class=SpellE>url</span></p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Путь доступа к изображению</p></td>
+    </tr>
+    <tr>
+      <td width=92 valign=top><p style='line-height:
+  normal'><span class=SpellE>None</span></p></td>
+      <td width=548 valign=top><p style='line-height:
+  normal'>Изображение не выводится</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Пример:</b></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>ul</span></span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>list-style-image</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: <span class=SpellE>url</span>(&quot;www.intuit.ru/speciality/image.gif&quot;);</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>list-style-type</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: square</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><b>Параметр</b><b><span lang=EN-US> 'list-style-position'</span></b></p>
+  <p style='line-height:
+normal'>Параметр определяет способ размещения маркера элемента списка.</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'><span class=SpellE>inside</span></p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Маркер смещен внутрь текста</p></td>
+    </tr>
+    <tr>
+      <td width=319 valign=top><p style='line-height:
+  normal'><span class=SpellE>outside</span></p></td>
+      <td width=319 valign=top><p style='line-height:
+  normal'>Маркер располагается слева от текста</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Пример</b><b><span lang=EN-US>:</span></b></p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='color:
+#C00000;'>ul</span></span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='color:#C00000;'>list-style-position</span></span><span lang=EN-US style='color:#C00000;
+'>: outside</span></p>
+  <p style='line-height:
+normal'><span style='color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><b>Параметр '<span class=SpellE>list-style-type</span>'</b></p>
+  <p style='line-height:
+normal'>Данный параметр задает тип маркера элемента списка.</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><b>Значение</b></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'><b>Описание</b></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>none</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Без маркера</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>disc</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — закрашенный круг</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>circle</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — окружность</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>square</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — закрашенный квадрат</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>decimal</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — число</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>decimal-leading-zero</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — число с добавленным ведущим нулем (01, 02, 03 и т.д.)</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>lower-roman</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — римские цифры, представленные строчными буквами (<span
+  class=SpellE>i</span>, <span class=SpellE>ii</span>, <span class=SpellE>iii</span>, <span class=SpellE>iv</span>, <span class=SpellE>v</span> и т.д.<span
+  class=GramE> )</span></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>upper-roman</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — <span class=SpellE>римске</span> цифры, представленные
+          прописными буквами (I, II, III, IV, V и т.д.)</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>lower-alpha</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — латинские строчные буквы (<span class=SpellE>a</span>, <span
+  class=SpellE>b</span>, <span class=SpellE>c</span>, <span class=SpellE>d</span>, <span class=SpellE>e</span> и т.д.)</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>upper-alpha</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер<span class=GramE> —- </span>латинские прописные буквы (A, B,
+          C, D, E и т.д.)</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>lower-greek</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — греческие прописные буквы (альфа, бета, гамма и т.д.)</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>lower-latin</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — латинские строчные буквы (<span class=SpellE>a</span>, <span
+  class=SpellE>b</span>, <span class=SpellE>c</span>, <span class=SpellE>d</span>, <span class=SpellE>e</span> и т.д.)</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>upper-latin</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — латинские прописные буквы (A, B, C, D, E и т.д.)</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>hebrew</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Традиционная еврейская нумерация</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>armenian</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Традиционная армянская нумерация</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>georgian</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Традиционная грузинская нумерация (<span class=SpellE>an</span>, <span
+  class=SpellE>ban</span>, <span class=SpellE>gan</span>, и т.д.)</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>cjk-ideographic</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — простые идеографические числа</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>hiragana</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер<span lang=PL> — a, i, u, e, o,
+          ka, ki, </span>и т<span lang=PL>.</span><span class=SpellE>д</span><span
+  lang=PL>.</span></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>katakana</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер<span lang=PL> — A, I, U, E, O,
+          KA, KI </span>и т<span lang=PL>.</span><span class=SpellE>д</span><span
+  lang=PL>.</span></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>hiragana-iroha</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — <span class=SpellE>i</span>, <span class=SpellE>ro</span>, <span
+  class=SpellE>ha</span>, <span class=SpellE>ni</span>, <span class=SpellE>ho</span>, <span class=SpellE>he</span>, <span class=SpellE>to</span> и т.д. </p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE>katakana-iroha</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Маркер — I, RO, HA, NI, HO, HE, TO и т.д.</p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Примеры:</b></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>ol</span></span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>list-style-type</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>: <span class=SpellE>circle</span></span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>ul</span></span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>{</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>list-style-type</span></span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>: <span class=SpellE>decimal</span></span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>}</span></p>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Примеры:</b></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Этот
+    пример показывает, как задать различные маркеры элементов списка. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ol.no</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {list-style-type: none}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ul.ds {list-style-type: disc}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ol.sqr {list-style-type: square}</span></p>
+  <p style='line-height:
+normal'><span lang=PL style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ul.crl {list-style-type: circle}</span></p>
+  <p style='line-height:
+normal'><span lang=PL style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=SpellE>ol</span> class=&quot;no&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;П</span>ервый элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ul</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>ds</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;П</span>ервый элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ul</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ol</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>sqr</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;П</span>ервый элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ul</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>crl</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;П</span>ервый элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ul</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'>2. Этот пример показывает, как задать различные маркеры элементов<span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'> </span>списка<span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>. </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=PL style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ul.dec {list-style-type: decimal}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ol.lwrm</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {list-style-type: lower-roman}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ul.uprm</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {list-style-type: upper-roman}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ol.lwalph</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {list-style-type: lower-alpha}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ul.upalph</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {list-style-type: upper-alpha}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=SpellE>ol</span> class=&quot;<span class=SpellE>lwalph</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;П</span>ервый элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ul</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>upalph</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;П</span>ервый элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span>&gt;Чай&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ul</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ol</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>lwrm</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;П</span>ервый элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ul</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>uprm</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;П</span>ервый элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ul</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>ul</span> <span class=SpellE>class=</span>&quot;<span
+class=SpellE>dec</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;П</span>ервый элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ul</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'>3.Этот пример показывает, как задать изображение в качестве маркера
+    элемента списка. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>ol</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>list-style-image</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: <span class=SpellE>url</span>(&quot;http://www.intuit.ru/departamen/speciality/image.gif&quot;)</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=SpellE><span
+class=GramE>ol</span></span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=SpellE><span
+class=GramE>li</span></span><span class=GramE>&gt;</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Первый</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>элемент</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'>4.Этот пример показывает, как можно задать расположение маркера
+    элемента списка. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ol.in</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>list-style-position</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: inside</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>ul.out</span></span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>list-style-position</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: outside</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=SpellE>ol</span> class=&quot;in&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Э</span>то первый элемент
+    списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Э</span>то второй элемент
+    списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Э</span>то третий элемент
+    списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>pre&gt;</span>C</span><span
+class=SpellE><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>писок</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>имеет</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> &lt;<span class=SpellE>i</span>&gt;&lt;u&gt;list-style-position&lt;/u&gt;&lt;/<span
+class=SpellE>i</span>&gt; = &quot;&lt;b&gt;inside&lt;/b&gt;&quot;&lt;/pre&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/<span class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=SpellE>ul</span> class=&quot;out&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Э</span>то первый элемент
+    списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Э</span>то второй элемент
+    списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Э</span>то третий элемент
+    списка&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ul</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>pre</span>&gt;Список имеет &lt;<span class=SpellE>i</span>&gt;&lt;<span
+class=SpellE>u</span>&gt;<span class=SpellE>list-style-position</span>&lt;/<span
+class=SpellE>u</span>&gt;&lt;/<span class=SpellE>i</span>&gt; = &quot;&lt;<span
+class=SpellE>b</span>&gt;<span class=SpellE>outside</span>&lt;/<span
+class=SpellE>b</span>&gt;&quot;&lt;/<span class=SpellE>pre</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+  <p style='
+line-height:normal'>5.Пример
+    показывает, как задать все параметры списка в одном объявлении. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>ol</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'> </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>list-style</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: disc outside <span class=SpellE>url</span>(&quot;http://www.intuit.ru/departament/speciality/image.gif&quot;)</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=SpellE><span
+class=GramE>ol</span></span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=SpellE><span
+class=GramE>li</span></span><span class=GramE>&gt;</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Первый</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>элемент</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>списка</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/<span class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;В</span>торой элемент списка&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;<span
+class=SpellE>li</span><span class=GramE>&gt;Т</span>ретий элемент списка&lt;/<span
+class=SpellE>li</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>ol</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>html</span>&gt;</span></p>
+</div>
+</body>
+</html>

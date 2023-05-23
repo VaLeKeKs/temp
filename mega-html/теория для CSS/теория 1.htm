@@ -1,0 +1,172 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%201.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%201.files/colorschememapping.xml">
+<style>
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+a:hover{color:red;text-decoration:none;}
+<!--
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.SpellE
+span.GramE
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+ol
+	{ul
+	{-->
+
+</style>
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1> 
+<ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+  <p align=center style='
+text-align:center;line-height:normal'><b>Введение в </b><b><span lang=EN-US>CSS</span></b></p>
+  <p style='line-height:normal'>Таблицы Каскадных Стилей (CSS - <span class=SpellE>Cascading</span> <span class=SpellE>Style</span> <span class=SpellE>Sheets</span>) позволяют нам
+    делать наши документы более гибкими, дает нам больше возможностей в работе над
+    сайтом. Первое, что следует понять – CSS отличный от HTML стандарт. Мы говорим
+    о нем в рамках  HTML, потому что CSS –
+    это стандарт, расширяющий возможности HTML. Как вы уже знаете – используя
+    только HTML, мы весьма ограничены в средствах. Чтобы ввести CSS в наши
+    HTML-документы, нам понадобятся связующие звенья – специальные тэги и их
+    атрибуты. </p>
+  <p style='line-height:normal'><span class=GramE>Возможно</span>  у вас вызвало удивление, когда вы видели
+    что-то на других страницах, а потом хотели реализовать то же самое у себя на
+    сайте, но не могли понять как. <span class=GramE>Это могли быть ссылки, которые
+    изменяют цвет при наведении, ссылки у которых убрано подчеркивание, текст,
+    который увеличивается в размере при наведении на него, ячейки таблицы, которые
+    меняют цвет при наведении, картинки и текст, которые наслаиваются друг на друга
+    – и многое другое.</span> Теперь вы знаете, что такие и подобные трюки
+    реализуются при помощи CSS.</p>
+  <p style='line-height:normal'>При помощи CSS можно:</p>
+  <p class=MsoListParagraphCxSpFirst style='
+line-height:normal;'><span
+style='"Times New Roman"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class=GramE>Использовать собственные
+    расширения HTML (так, например, вы можете окрасить текст в синий цвет при
+    помощи атрибута <span class=SpellE>color</span> тэга FONT, а можете
+    использовать Таблицы Каскадных стилей, для того, чтобы сделать тоже самое,
+    преимущество в этом, что стили могут быть вынесены в отдельный файл, и, чтобы
+    потом поменять цвет указанных блоков текста во всех документах вашего сайта,
+    достаточно изменить одну строку в</span> <span class=GramE>одном файле, а так
+    вам бы пришлось вручную менять код многих страниц). </span></p>
+  <p class=MsoListParagraphCxSpMiddle style='
+line-height:normal;'><span
+style='"Times New Roman"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Свободно управлять содержимым <span
+class=SpellE>веб-страниц</span> (позиционировать блоки текста, таблицы,
+    картинки, как вам угодно, например, наложить текст и картинки друг на друга, в
+    любом месте страницы). </p>
+  <p class=MsoListParagraphCxSpLast style='
+line-height:normal;'><span
+style='"Times New Roman"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Различные визуальные эффекты (прозрачность,
+    смена цвета при наведении и прочее) и так далее.</p>
+  <p style='line-height:
+normal'>Стили являются удобным, практичным и эффективным инструментом при
+    верстке <span class=SpellE>веб-страниц</span> и оформления текста, ссылок,
+    изображений и других элементов. Далее мы рассмотрим преимущества, которые дает
+    CSS.</p>
+  <p style='line-height:
+normal'>Стили обычно хранятся в таблицах стилей: могут быть определены как
+    внутри HTML-документа, так и в специальном файле с расширением <span
+class=SpellE>css</span>. Используя отдельные файлы для хранения таблиц стилей,
+    можно существенно сократить объем работы. Также можно определить несколько
+    стилей, которые, подчиняясь существующим правилам, будут <span class=SpellE>каскадно</span> задавать один определенный стиль.</p>
+  <p style='line-height:
+normal'><b>Предназначение стилей</b></p>
+  <p style='line-height:normal'>Язык HTML был создан для описания содержимого
+    документа. Его теги были предназначены для определения &quot;заголовка&quot;,
+    &quot;параграфа&quot;, &quot;таблицы&quot; (&lt;h1&gt;, &lt;<span class=SpellE>p</span>&gt;,
+    &lt;<span class=SpellE>table</span>&gt; и т.д.). Первоначально для
+    представления документов не было предусмотрено каких-либо тегов форматирования,
+    т.е. предполагалось, что о представлении документа позаботится браузер. </p>
+  <p style='line-height:normal'>Но это породило процесс создания своих тегов и
+    атрибутов к исходной спецификации HTML-браузерами <span class=SpellE>Netscape</span> и <span class=SpellE>Internet</span> <span class=SpellE>Explorer</span> (такие,
+    например, как тег &lt;<span class=SpellE>font</span>&gt; и атрибут <span
+class=SpellE>color</span>), что затруднило создание Web-сайтов, на которых
+    содержимое документов HTML было четко отделено от уровня представления
+    документа. </p>
+  <p style='line-height:normal'>В этой ситуации консорциум W3C (<span class=SpellE>World</span> <span class=SpellE>Wide</span> <span class=SpellE>Web</span> <span
+class=SpellE>Consortium</span>) — некоммерческая организация, ответственная за
+    стандартизацию HTML — создала при разработке стандарта HTML 4.0 каскадные
+    таблицы стилей. </p>
+  <p style='line-height:normal'>Таким образом, необходимость разделения содержимого
+    документа и его представления привела к созданию технологии CSS. </p>
+  <p style='line-height:normal'>Сегодня эту технологию поддерживают все основные
+    браузеры (<span class=SpellE>Internet</span> <span class=SpellE>Explorer</span>, <span class=SpellE>Mozilla</span> <span class=SpellE>Firefox</span>, <span
+class=SpellE>Opera</span> и др.).</p>
+  <p style='line-height:normal'>Таблицы стилей определяют вывод элементов HTML
+    (как, например, тег <span class=SpellE>font</span> и атрибут <span
+class=SpellE>color</span> в HTML 3.2). Как уже говорилось, каскадные таблицы
+    стилей обычно хранятся во внешних файлах с расширением .<span class=SpellE>css</span>.
+    Этот способ удобен тем, что позволяет изменить внешний вид и компоновку всех
+    необходимых страниц в <span class=SpellE>Web</span>, редактируя только один,
+    единственный документ CSS.</p>
+  <p style='line-height:normal'>Разработчик может определять стили следующими
+    способами: </p>
+  <p style='line-height:normal'>- внутри единственного элемента HTML;</p>
+  <p style='line-height:normal'>- внутри элемента &lt;<span class=SpellE>head</span>&gt;
+    страницы HTML;</p>
+  <p style='line-height:normal'>- во внешнем файле CSS.</p>
+  <p style='line-height:normal'><b>Приоритет
+    использования стилей</b></p>
+  <p style='line-height:normal'><b>Для
+    каскадных таблиц стилей определен приоритет использования</b>. Если для
+    элемента HTML определено более одного стиля, то все стили будут последовательно
+    &quot;<span class=SpellE>каскадированы</span>&quot; в новую
+    &quot;виртуальную&quot; таблицу стилей, согласно следующим правилам: </p>
+  <p style='line-height:normal'>- стили, используемые по умолчанию браузером;</p>
+  <p style='line-height:normal'>- стили, хранящиеся во внешней таблице; </p>
+  <p style='line-height:normal'>- стили, хранящиеся во внутренней таблице стилей
+    (внутри тега &lt;<span class=SpellE>head</span>&gt;);</p>
+  <p style='line-height:normal'>- встроенный стиль (внутри элемента HTML). </p>
+  <p style='line-height:normal'>Эти правила определяют порядок увеличения
+    приоритета стилей. </p>
+  <p style='line-height:normal'>Таким образом, встроенный стиль (внутри элемента
+    HTML) имеет наивысший приоритет, т.е. будет переопределять стиль, который
+    объявлен в теге &lt;<span class=SpellE>head</span>&gt;, во внешней таблице
+    стилей или в браузере (значение по умолчанию).</p>
+</div>
+</body>
+</html>

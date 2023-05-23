@@ -1,0 +1,1247 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="XML_теория_2.files/filelist.xml">
+<title>Схема DTD (как и любая другая схема) представляет шаблон разметки
+документа, в котором указываются наличие, порядок следования</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Vera</o:Author>
+  <o:LastAuthor>Студент</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>207</o:TotalTime>
+  <o:Created>2010-03-14T16:21:00Z</o:Created>
+  <o:LastSaved>2010-10-28T12:30:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>809</o:Words>
+  <o:Characters>4613</o:Characters>
+  <o:Lines>38</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5412</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=2.css>
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	tab-stops:right 432.0pt;
+	font-size:12.0pt;
+	mso-font-kerning:0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 233.85pt right 467.75pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 233.85pt right 467.75pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:14.2pt;
+	mso-pagination:widow-orphan;
+	tab-stops:153.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+a:link, span.MsoHyperlink
+	{mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	color:#007FFF;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:12.0pt;
+	mso-fareast-font-family:"Times New Roman";}
+p.1, li.1, div.1
+	{mso-style-name:Стиль1;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo2;
+	tab-stops:list 36.0pt;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:maroon;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("XML_теория_2.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("XML_теория_2.files/header.htm") fcs;
+	mso-endnote-separator:url("XML_теория_2.files/header.htm") es;
+	mso-endnote-continuation-separator:url("XML_теория_2.files/header.htm") ecs;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:42.55pt 42.55pt 42.55pt 42.55pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-header:url("XML_теория_2.files/header.htm") h1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:184902368;
+	mso-list-type:hybrid;
+	mso-list-template-ids:137008378 1909507140 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:Стиль1;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:1078164505;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1736456558 -266292114 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l1:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:53.4pt;
+	mso-level-number-position:left;
+	margin-left:53.4pt;
+	text-indent:-18.0pt;}
+@list l1:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:1182011396;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1068932234 68747281 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l2:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:2054231837;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-731759214 68747281 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l3:level1
+	{mso-level-start-at:3;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Сетка таблицы";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+<body  bgcolor="#99CC99">
+<p><a href="../teoria2/teoriia.html" target="_self"><span class="style2-ssylki">&laquo; назад</span></a></p>
+
+<div id=layout1>
+
+
+<div class=Section1>
+
+<div id=layout3>
+
+<p class=MsoTitle><a name="Vverh" id="Vverh"></a><BIG>Теория к лабораторной работе:</BIG></p>
+<br>
+<p class=MsoTitle>Схема DTD</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:35.4pt'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></b></p>
+<p><a href="#Vniz">Вниз</a></p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt'>Схема <span
+lang=EN-US style='mso-ansi-language:EN-US'>DTD</span> (как и любая другая
+схема) представляет <i style='mso-bidi-font-style:normal'>шаблон</i> разметки
+документа, в котором указываются наличие, порядок следования и расположение
+элементов и их атрибутов в документе <span lang=EN-US style='mso-ansi-language:
+EN-US'>XML</span>. Т.е. схемы <span lang=EN-US style='mso-ansi-language:EN-US'>DTD</span>
+задают структуру и синтаксис <span lang=EN-US style='mso-ansi-language:EN-US'>XML</span>
+документов, а не их содержание.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt'>Можно
+использовать <span lang=EN-US style='mso-ansi-language:EN-US'>XML</span> без <span
+lang=EN-US style='mso-ansi-language:EN-US'>DTD</span> или любой другой схемы:
+такие документы будут <i style='mso-bidi-font-style:normal'>формально
+корректными</i>, если они удовлетворяют основным требованиям синтаксиса XML.
+Однако схемы позволяют проверять <i style='mso-bidi-font-style:normal'>правильность
+содержания</i> документа на предмет соблюдения некоторых определенных <i
+style='mso-bidi-font-style:normal'>правил и ограничений</i>, заданных в схеме <span
+lang=EN-US style='mso-ansi-language:EN-US'>DTD</span>. XML-документ считается <i
+style='mso-bidi-font-style:normal'>действительным</i>, если в его состав
+включена схема DTD или XML-схема, а сам документ не противоречит схеме.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt'>Для того чтобы
+использовать схему DTD в нашем документе, мы можем:</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>описать ее во <span style='color:navy'>внешнем файле</span>
+(<span lang=EN-US style='mso-ansi-language:EN-US'>c</span><span lang=EN-US> </span>расширением
+.<span class=SpellE>dtd</span><span class=GramE> )</span>и при описании схемы DTD
+просто указать ссылку на этот файл (внешняя схема DTD):</p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><span style='font-family:"Courier New";color:maroon'>&lt;! DOCTYPE <span
+class=SpellE>имя_элемента</span> SYSTEM &quot;<span class=SpellE>имя_файла.dtd</span>&quot;&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><b style='mso-bidi-font-weight:normal'>Например</b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-ansi-language:EN-US'>:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;?xml</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> version=&quot;1.0&quot;?&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>&lt;!
+DOCTYPE <span class=GramE>example<span style='mso-spacerun:yes'>  </span>SYSTEM</span>
+&quot;<span class=SpellE>example.dtd</span>&quot;&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>&lt;<span
+class=GramE>example</span>&gt; </span><span style='font-family:"Courier New"'>Это</span><span
+style='font-family:"Courier New";mso-ansi-language:EN-US'> </span><span
+style='font-family:"Courier New"'>внешняя</span><span style='font-family:"Courier New";
+mso-ansi-language:EN-US'> </span><span style='font-family:"Courier New"'>схема</span><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>&lt;/example&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>непосредственно <span style='color:navy'>внутри</span>
+самого <span style='color:navy'>документа</span> выделить область, в которой
+определить нужные правила (внутренняя схема DTD):</p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><span class=GramE><span style='font-family:"Courier New";color:maroon'>&lt;!
+</span><span lang=EN-US style='font-family:"Courier New";color:maroon;
+mso-ansi-language:EN-US'>DOCTYPE</span><span lang=EN-US style='font-family:
+"Courier New";color:maroon'> </span><span class=SpellE><span style='font-family:
+"Courier New";color:maroon'>имя_элемента</span></span><span style='font-family:
+"Courier New"'> <b style='mso-bidi-font-weight:normal'><span style='color:blue'>[</span></b></span></span><span
+style='font-family:"Courier New";color:blue'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><span style='font-family:"Courier New";color:maroon'>&lt;!</span><span
+lang=EN-US style='font-family:"Courier New";color:maroon;mso-ansi-language:
+EN-US'>ELEMENT</span><span style='font-family:"Courier New";color:maroon'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>имя_элемента</span> (<span
+class=SpellE>дочерний_элемент</span>)&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><span lang=EN-US style='font-family:"Courier New";color:maroon;
+mso-ansi-language:EN-US'>...<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><span lang=EN-US style='font-family:"Courier New";color:blue;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                                                
+</span><b style='mso-bidi-font-weight:normal'>]</b></span><span lang=EN-US
+style='font-family:"Courier New";color:maroon;mso-ansi-language:EN-US'>&gt;</span><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><b style='mso-bidi-font-weight:normal'>Например</b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-ansi-language:EN-US'>:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;?xml</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> version=&quot;1.0&quot;?&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>&lt;!
+DOCTYPE <span class=GramE>example<span style='mso-spacerun:yes'>  </span><b
+style='mso-bidi-font-weight:normal'><span style='color:blue'>[</span></b></span><span
+style='color:blue'><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;!ELEMENT</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> example (#PCDATA)&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-indent:
+35.4pt'><span lang=EN-US style='font-family:"Courier New";color:blue;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>                     
+</span></span><b style='mso-bidi-font-weight:normal'><span style='font-family:
+"Courier New";color:blue'>]</span></b><span style='font-family:"Courier New"'>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>&lt;</span><span lang=EN-US style='font-family:
+"Courier New";mso-ansi-language:EN-US'>example</span><span class=GramE><span
+style='font-family:"Courier New"'>&gt; Э</span></span><span style='font-family:
+"Courier New"'>то внутренняя схема<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>&lt;/</span><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'>example</span><span
+style='font-family:"Courier New"'>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>Все, что указано в квадратных
+скобках<span class=GramE><span style='color:blue'> <b style='mso-bidi-font-weight:
+normal'>[…]</b></span> </span>образует внутреннюю схему DTD.</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>Все ключевые слова, такие как <span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>ELEMENT</span><span
+style='font-family:"Courier New"'>, #</span><span lang=EN-US style='font-family:
+"Courier New";mso-ansi-language:EN-US'>PCDATA</span><span style='font-family:
+"Courier New"'>, #</span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'>REQUIRED</span><span lang=EN-US> </span>и т.д. должны указываться
+с помощью символов верхнего регистра.</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><b>Объявление элементов в схеме </b><b><span
+lang=EN-US style='mso-ansi-language:EN-US'>DTD</span><o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>Элементы:</p>
+
+<p class=MsoNormal style='margin-left:53.4pt;text-indent:-18.0pt;mso-list:l1 level1 lfo6;
+tab-stops:list 53.4pt'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>элементы-контейнеры,
+которые могут содержать:</p>
+
+<p class=MsoNormal style='margin-left:35.4pt'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'>           </span>а)
+данные (например, текст)</p>
+
+<p class=MsoNormal style='margin-left:35.4pt'><span style='mso-tab-count:1'>            </span>б)
+дочерние элементы</p>
+
+<p class=MsoNormal style='margin-left:35.4pt'><span style='mso-tab-count:1'>            </span>в)
+и то, и другое (смешанное содержимое)</p>
+
+<p class=MsoNormal style='margin-left:35.4pt'>2) пустые элементы.</p>
+
+<p class=MsoNormal style='margin-left:35.4pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>Объявления элементов имеют
+следующий вид:</p>
+
+<p class=MsoNormal style='text-indent:18.0pt'><span style='font-family:"Courier New"'>&lt;!</span><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>ELEMENT</span><span
+style='font-family:"Courier New"'> <span class=SpellE>имя_элемента</span>
+(модель <b style='mso-bidi-font-weight:normal'><span style='color:#FF6600'>содержания</span></b>)&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:18.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:18.0pt'><b style='mso-bidi-font-weight:
+normal'>Например:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>&lt;!</span><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'>ELEMENT example</span><span
+style='font-family:"Courier New"'> (<span style='color:#FF6600'>#</span></span><span
+lang=EN-US style='font-family:"Courier New";color:#FF6600;mso-ansi-language:
+EN-US'>PCDATA</span><span style='font-family:"Courier New"'>)&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><b
+style='mso-bidi-font-weight:normal'><span style='color:#FF6600'>Содержание</span></b>
+элементов:</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:17.6pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>(#<span lang=EN-US style='mso-ansi-language:EN-US'>PCDATA</span>)
+  </p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>элемент содержит текстовые данные</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>(<span class=SpellE>дочерний_элемент</span>)<span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>элемент<span style='mso-spacerun:yes'>  </span>содержит
+  дочерний элемент </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>(#<span lang=EN-US style='mso-ansi-language:EN-US'>PCDATA|</span><span
+  class=SpellE>дочерний_элемент</span>)<span lang=EN-US style='mso-ansi-language:
+  EN-US'>* </span></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>элемент содержит текстовые данные и дочерний элемент</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>EMPTY</span></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>элемент ничего не содержит</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ANY</span></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>элемент может содержать текстовые данные или дочерние
+  элементы</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>Объявление атрибутов в схеме </b><b><span lang=EN-US
+style='mso-ansi-language:EN-US'>DTD</span><o:p></o:p></b></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Объявления
+атрибутов имеют следующий вид:</p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>&lt;!</span><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>ATTLIST</span><span
+style='font-family:"Courier New"'> <span class=SpellE>имя_элемента</span>
+имя_атрибута<span class=GramE>1</span> (<b style='mso-bidi-font-weight:normal'><span
+style='color:#993366'>тип</span></b>) <b style='mso-bidi-font-weight:normal'><span
+style='color:#33CCCC'>значение</span></b> атрибута<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;text-indent:35.4pt;tab-stops:
+right 432.0pt'><span style='font-family:"Courier New"'>имя_атрибута<span
+class=GramE>2</span> (<b style='mso-bidi-font-weight:normal'><span
+style='color:#993366'>тип</span></b>) <b style='mso-bidi-font-weight:normal'><span
+style='color:#33CCCC'>значение</span></b> атрибута&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:36.0pt right 432.0pt'><span
+style='mso-tab-count:1'>            </span></p>
+
+<p class=MsoNormal style='tab-stops:36.0pt right 432.0pt'><span
+style='mso-tab-count:1'>            </span><b style='mso-bidi-font-weight:normal'>Например</b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='tab-stops:right 432.0pt'><span class=GramE><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>&lt;!ATTLIST</span></span><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'> example
+number <b style='mso-bidi-font-weight:normal'><span style='color:purple'>ID</span></b>
+<b style='mso-bidi-font-weight:normal'><span style='color:#33CCCC'>#REQUIRED</span></b>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:108.0pt 117.0pt right 432.0pt'><span
+lang=EN-US style='mso-ansi-language:EN-US'><span style='mso-tab-count:1'>                                    </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;tab-stops:36.0pt right 432.0pt'>Стандартные<span
+style='mso-ansi-language:EN-US'> </span><b style='mso-bidi-font-weight:normal'><span
+style='color:#33CCCC'>значения</span></b><span style='mso-ansi-language:EN-US'>
+</span>атрибутов<span lang=EN-US style='mso-ansi-language:EN-US'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;tab-stops:36.0pt right 432.0pt'><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=629
+ style='width:471.6pt;margin-left:17.6pt;border-collapse:collapse;border:none;
+ mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:480;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
+ .5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=516 valign=top style='width:387.3pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:36.0pt right 432.0pt'>#<span lang=EN-US
+  style='mso-ansi-language:EN-US'>REQUIRED </span></p>
+  </td>
+  <td width=112 valign=top style='width:84.3pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:36.0pt right 432.0pt'>атрибут должен быть
+  указан</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=516 valign=top style='width:387.3pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:36.0pt right 432.0pt'>#<span lang=EN-US
+  style='mso-ansi-language:EN-US'>FIXED </span></p>
+  </td>
+  <td width=112 valign=top style='width:84.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:36.0pt right 432.0pt'>значение атрибута
+  фиксировано. Если значение атрибута отличается <span class=GramE>от</span>
+  объявленного, документ не считается правильным</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=516 valign=top style='width:387.3pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'>#<span lang=EN-US
+  style='mso-ansi-language:EN-US'>IMPLIED </span><span style='mso-tab-count:
+  1'>                                                                                                           </span></p>
+  </td>
+  <td width=112 valign=top style='width:84.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'>атрибут необязателен</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=516 valign=top style='width:387.3pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'>“<span class=SpellE>значение_по_умолчанию</span>”
+  </p>
+  </td>
+  <td width=112 valign=top style='width:84.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'>если в документе опустить
+  атрибут, ему будет назначено значение по умолчанию, указанное в кавычках</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='tab-stops:right 432.0pt'><span
+style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal style='tab-stops:36.0pt right 432.0pt'><span
+style='mso-tab-count:1'>            </span>Существуют 3 <b style='mso-bidi-font-weight:
+normal'><span style='color:#993366'>типа</span></b> атрибутов:</p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-9.0pt;tab-stops:right 432.0pt'>1)
+строки, указываемые с помощью ключевого слова <span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'>CDATA</span>;</p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-9.0pt;tab-stops:right 432.0pt'>2)
+маркированные атрибуты, указываемые с помощью определенных ранее маркеров;</p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:right 432.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:18.0pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>ID<o:p></o:p></span></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'>Уникальным образом
+  идентифицирует элемент (значение атрибута должно начинаться с буквы или
+  символа «<b style='mso-bidi-font-weight:normal'>_</b>»)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>IDREF<o:p></o:p></span></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'>Указывает на элементы,
+  содержащие атрибут <span lang=EN-US style='mso-ansi-language:EN-US'>ID</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>ENTITY</span></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'>Ссылка на внешний элемент</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>NMTOKEN</span></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'>Содержит буквы, цифры, точки,
+  знаки подчеркивания, переносы и двоеточия, но не пробелы</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:right 432.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo8;
+tab-stops:list 36.0pt right 432.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>атрибуты с перечислением, предлагающие целый список
+допустимых значений (при перечислении используется знак |, который
+воспринимается как логический оператор «или»)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:right 432.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:right 432.0pt'><b>Индикаторы
+последовательностей и вхождений для схем </b><b><span lang=EN-US
+style='mso-ansi-language:EN-US'>DTD</span><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:right 432.0pt'><b><o:p>&nbsp;</o:p></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:18.0pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><b><span lang=EN-US
+  style='mso-ansi-language:EN-US'>,<o:p></o:p></span></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>(a, b, c)<o:p></o:p></span></p>
+  </td>
+  <td width=403 valign=top style='width:302.4pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'>Оператор
+  последовательности разделяет члены списка, когда необходимо последовательное
+  использование членов списка</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>|<b><o:p></o:p></b></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>(<span class=SpellE>a|b|c</span>)<b><o:p></o:p></b></span></p>
+  </td>
+  <td width=403 valign=top style='width:302.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;tab-stops:right 432.0pt'>Оператор
+  выбора разделяет члены списка, когда необходимо использовать только один из
+  членов списка</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>date</span></p>
+  </td>
+  <td width=403 valign=top style='width:302.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;tab-stops:right 432.0pt'>Отсутствие
+  какого-либо символа указывает на необходимое вхождение одного и только одного
+  элемента <span lang=EN-US style='mso-ansi-language:EN-US'>date</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>?<o:p></o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span class=GramE><span
+  lang=EN-US style='mso-ansi-language:EN-US'>subject</span></span><span
+  lang=EN-US style='mso-ansi-language:EN-US'>?<o:p></o:p></span></p>
+  </td>
+  <td width=403 valign=top style='width:302.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;tab-stops:right 432.0pt'>Символ указывает
+  на необязательное вхождение (0 или 1 раз) элемента <span lang=EN-US
+  style='mso-ansi-language:EN-US'>subject</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>+<o:p></o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>paragraph</span>+</p>
+  </td>
+  <td width=403 valign=top style='width:302.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;tab-stops:right 432.0pt'>Символ
+  указывает на обязательное и повторяющееся вхождение (1 или несколько раз)
+  элемента <span lang=EN-US style='mso-ansi-language:EN-US'>paragraph</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>*<o:p></o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='tab-stops:right 432.0pt'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>brother</span>*</p>
+  </td>
+  <td width=403 valign=top style='width:302.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;tab-stops:right 432.0pt'>Символ указывает
+  на необязательное и повторяющееся вхождение (0 или несколько раз) элемента <span
+  lang=EN-US style='mso-ansi-language:EN-US'>brother</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:right 432.0pt'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:right 432.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:27.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='color:#1F497D'>Пример</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='color:#1F497D;mso-ansi-language:EN-US'> 1.</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;?xml</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> version=&quot;1.0&quot;?&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;!DOCTYPE</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> note <b style='mso-bidi-font-weight:normal'><span
+style='color:blue'>[</span></b><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;!ELEMENT</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> note (<span style='color:#FF6600'>message+, outcome+</span>)&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;!ELEMENT</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> message (<span style='color:#FF6600'>#PCDATA</span>)&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;!ATTLIST</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> message <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>          </span><span class=GramE>number</span> <span
+style='color:purple'>ID</span> <span style='color:#33CCCC'>#REQUIRED</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>          </span><span class=GramE>from</span> <span
+style='color:purple'>CDATA</span> <span style='color:#33CCCC'>#REQUIRED</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>          </span><span class=GramE>alert</span> (<span
+style='color:purple'>low| normal| urgent</span>) <span style='color:#33CCCC'>#IMPLIED</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;!ELEMENT</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> outcome (<span style='color:#FF6600'>#PCDATA</span>)&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>&lt;!ATTLIST</span></span><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> outcome<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>          </span><span class=SpellE><span class=GramE>msg</span></span>
+<span style='color:purple'>IDREF</span> <span style='color:#33CCCC'>#IMPLIED</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'>&lt;!ENTITY</span></b></span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'> today &quot;05.11.09&quot;&gt;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                                </span><b
+style='mso-bidi-font-weight:normal'><span style='color:blue'>]</span></b>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>&lt;<span
+class=GramE>note</span>&gt; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;message
+number=&quot;a1<span class=GramE>&quot;<span style='mso-spacerun:yes'> 
+</span>from</span>=&quot;Kathy Shepherd&quot; alert=&quot;low&quot;&gt;<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span><b
+style='mso-bidi-font-weight:normal'>&amp;today;</b> <span class=GramE>Remember</span>
+to buy milk on the way home from work <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;/message&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;message
+number=&quot;a2<span class=GramE>&quot;<span style='mso-spacerun:yes'> 
+</span>from</span>=&quot;Greg Shepherd&quot; alert=&quot;urgent&quot;&gt;<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>  </span><span style='mso-spacerun:yes'> </span><b
+style='mso-bidi-font-weight:normal'>&amp;today;</b> I need some help with my
+homework<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;/message&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;message
+number=&quot;a3<span class=GramE>&quot; <span
+style='mso-spacerun:yes'> </span>from</span>=&quot;Kristen
+Shepherd&quot;&gt;<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span><b
+style='mso-bidi-font-weight:normal'>&amp;today;</b> <span class=GramE>Please</span>
+play with me<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;/message&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;outcome
+<span class=SpellE>msg</span>=&quot;a1&quot;&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span><span
+class=GramE>milk</span> was past its best before date<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;/outcome&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;outcome
+<span class=SpellE>msg</span>=&quot;a1&quot;&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>  </span><span style='mso-spacerun:yes'> </span><span
+class=GramE>went</span> to a different store<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;/outcome&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:1'> </span>&lt;outcome
+<span class=SpellE>msg</span>=&quot;a2&quot;&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>  </span><span style='mso-spacerun:yes'> </span><span
+class=GramE>homework</span> finished early<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>  </span>&lt;/outcome&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:91.5pt'><span
+style='font-family:"Courier New"'>&lt;/<span class=SpellE>note</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;tab-stops:36.0pt right 432.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:36.0pt right 432.0pt'><span
+style='mso-tab-count:1'>            </span>При просмотре документа с помощью <span
+lang=EN-US style='mso-ansi-language:EN-US'>IE</span><span lang=EN-US> </span>обратите
+внимание, что символы <b style='mso-bidi-font-weight:normal'><span
+style='font-family:"Courier New"'>&amp;</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-family:"Courier New";mso-ansi-language:
+EN-US'>today</span>;</b> были заменены на значение <b style='mso-bidi-font-weight:
+normal'>&quot;05.11.09&quot;</b>, указанное в схеме<b> </b><span lang=EN-US
+style='mso-ansi-language:EN-US;mso-bidi-font-weight:bold'>DTD</span><span
+style='mso-bidi-font-weight:bold'>.</span></p>
+<p class="style2-ssylki"><a href="#Vverh">Вверх</a></p>
+<p class="style2-ssylki"><a href="praktika.html" target="_self"><a name="Vniz" id="Vniz"></a></a></p>
+
+<p><a href="../praktika2/xml_задания_2.htm" target="l"><span style='font-size:14.0pt'>Перейти
+к лабораторной работе</span></a></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=themeData href="теория%2014.files/themedata.thmx">
+<link rel=colorSchemeMapping href="теория%2014.files/colorschememapping.xml">
+<style>
+#nav li {
+display : inline;/*расположение по горизонтали*/
+margin : 0 8px;
+ font-family: arial, "sans serif"; 
+}
+a {
+text-decoration : none;
+}
+a:hover{color:red;text-decoration:none;}
+<!--
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.SpellE
+span.GramE
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{line-height:115%;}
+ol
+	{ul
+	{-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" lang=RU>
+<div class=Section1>
+ <ul id="nav">
+<li><a href="теория 1.htm">Введение в CSS</a></li> 
+<li><a href="теория 2.htm">Синтаксис CSS</a></li>
+<li><a href="теория 3.htm">Подключение таблицы стилей</a></li>
+<li><a href="теория 4.htm">Параметры фона в CSS</a></li>
+<li><a href="теория 5.htm">Параметры текста CSS</a></li>
+<li><a href="теория 6.htm">Параметры шрифта в CSS</a></li>
+<li><a href="теория 7.htm">Параметры границы в CSS</a></li>
+<li><a href="теория 8.htm">Отступы в CSS</a></li>
+<li><a href="теория 9.htm">Параметры полей в CSS</a></li>
+<li><a href="теория 10.htm">Списки в CSS</a></li>
+<li><a href="теория 11.htm">Параметры размеров элементов CSS</a></li>
+<li><a href="теория 12.htm">Позиционирования в CSS</a></li>
+<li><a href="теория 13.htm">Псевдо-классы CSS</a></li>
+<li><a href="теория 14.htm">Псевдо-элементы CSS</a></li>
+</ul>
+  <p align=center style='
+text-align:center;line-height:normal'><span class=SpellE><b>Псевдо-элементы</b></span><b> CSS</b></p>
+  <p style='line-height:
+normal'>Эти <span class=SpellE>псевдо-элементы</span> используются для
+    добавления специальных эффектов в некоторые селекторы.</p>
+  <p style='line-height:
+normal'><b>Синтаксис <span class=SpellE>псевдо-элементов</span>:</b></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>selector</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>:</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>pseudo</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>-</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>element</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'> {</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>property</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>: </span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>value</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>}</span></p>
+  <p style='line-height:
+normal'>Классы CSS также можно использовать с <span class=SpellE>псевдо-элементами</span>:</p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>selector.class:pseudo</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>-element {property: value}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><b>Псевдо-элемент</b></span><span
+class=GramE><b> :</b></span><span
+class=SpellE><b>first-line</b></span></p>
+  <p style='line-height:
+normal'><span class=GramE>Данный</span> <span class=SpellE>псевдо-элемент</span> используется для добавления специальных стилей к первой строке текста в
+    селекторе:</p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>div</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {font-size: 5pt}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>div:</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>first</span></span><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>-line
+    {color: #808000; font-variant: normal}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>div</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;Текст, продолжающийся на две или большее количество строк
+    &lt;/</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>div</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'>В примере выше браузер выводит первую строку (длина определяется
+    размером окна браузера), форматированную согласно <span class=SpellE>псевдо-элементу</span> &quot;<span class=SpellE>first-line</span>&quot;.</p>
+  <p style='line-height:
+normal'><b>Примечания:</b></p>
+  <p style='line-height:
+normal'><span class=SpellE>Псевдо-элемент</span> &quot;<span class=SpellE>first-line</span>&quot;
+    можно использовать только с элементами уровня блока. </p>
+  <p style='line-height:
+normal'>Следующие параметры применимы в <span class=SpellE>псевдо-элементе</span> &quot;<span class=SpellE>first-line</span>&quot;: </p>
+  <p style='line-height:
+normal'>параметры шрифта</p>
+  <p style='line-height:
+normal'>параметры цвета </p>
+  <p style='line-height:
+normal'>параметры фона </p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>word-spacing</span></span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>letter-spacing</span></span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>text-decoration</span></span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>vertical-</span></span><span
+lang=EN-US>align</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>text-transform</span></span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>line-height</span></span></p>
+  <p style='line-height:
+normal'><span class=SpellE>clear</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><b>Псевдо-элемент</b></span><span
+class=GramE><b> :</b></span><span
+class=SpellE><b>first-letter</b></span></p>
+  <p style='line-height:
+normal'>Данный <span class=SpellE>псевдо-элемент</span> используется для
+    добавления специального стиля первой букве текста в селекторе<span class=GramE> :</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>div</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {font-size: 20pt}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>div:</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>first</span></span><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>-letter
+    {font-size: 150%; float: right}</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>div</span><span class=GramE><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>&gt;П</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>ервое слово
+    имеет специальный стиль&lt;/</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>div</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'><b>Примечания:</b></p>
+  <p style='line-height:
+normal'><span class=SpellE>Псевдо-элемент</span> &quot;<span class=SpellE>first-letter</span>&quot;
+    может использоваться только с элементами блочного уровня. </p>
+  <p style='line-height:
+normal'>Следующие параметры применимы в <span class=SpellE>псевдо-элементе</span> &quot;<span class=SpellE>first-letter</span>&quot;: </p>
+  <p style='line-height:
+normal'>параметры шрифта</p>
+  <p style='line-height:
+normal'>параметры цвета </p>
+  <p style='line-height:
+normal'>параметры фона </p>
+  <p style='line-height:
+normal'>параметры отступов</p>
+  <p style='line-height:
+normal'>параметры полей </p>
+  <p style='line-height:
+normal'>параметры границ </p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>text-decoration</span></span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>vertical-</span></span><span
+lang=EN-US>align (</span>только если<span lang=EN-US> 'float' </span>определен как<span
+lang=EN-US> 'none')</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>text-transform</span></span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>line-height</span></span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>float</span></span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US>clear</span></span></p>
+  <p style='line-height:
+normal'><span class=SpellE><b>Псевдо-элементы</b></span><b> и классы CSS</b></p>
+  <p style='line-height:
+normal'><span class=SpellE>Псевдо-элементы</span> можно объединять с классами
+    CSS:</p>
+  <p style='line-height:
+normal'><span class=SpellE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>div.first<span class=GramE>:first</span></span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>-letter {color: #800000 }</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;</span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>div</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'> </span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>class</span><span style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000'>=&quot;</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>first</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&quot;&gt;Параграф статьи&lt;/</span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>div</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&gt;</span></p>
+  <p style='line-height:
+normal'>В примере выше первая буква всех элементов <span class=SpellE>div</span>,
+    где <span class=SpellE>class=</span>&quot;<span class=SpellE>first</span>&quot;,
+    будет красной. </p>
+  <p style='line-height:
+normal'><b>Несколько <span class=SpellE>псевдо-элементов</span> </b></p>
+  <p style='line-height:
+normal'>Несколько <span class=SpellE>псевдо-элементов</span> можно объединять:</p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>div</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> {font-size: 20pt}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>div:</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>first</span></span><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>-letter
+    {color: #808000; font-size: 150%}</span></p>
+  <p style='line-height:
+normal'><span class=SpellE><span class=GramE><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>div:</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>first</span></span><span lang=EN-US style='font-family:
+&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;'>-line
+    {color: #808080 }</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>div&gt;</span></span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000'>Текст</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>текст</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>текст</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/div&gt;</span></p>
+  <p style='line-height:
+normal'>В примере выше первая буква параграфа будет оливковой с размером шрифта
+    20pt. Остальная часть первой строки будет серой, а остаток параграфа будет
+    иметь цвет по умолчанию.</p>
+  <table border=1 cellspacing=0 cellpadding=0>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'><span class=SpellE><b>Псевдо-элемент</b></span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'><b>Назначение</b></p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>first-letter</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Добавляет специальный стиль к первой букве текста</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>first-line</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Добавляет специальный стиль к первой строке текста</p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>before</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Вставляет некоторое содержимое перед элементом </p></td>
+    </tr>
+    <tr>
+      <td width=130 valign=top><p style='line-height:
+  normal'>:<span class=SpellE>after</span></p></td>
+      <td width=501 valign=top><p style='line-height:
+  normal'>Вставляет некоторое содержимое после элемента </p></td>
+    </tr>
+  </table>
+  <p style='line-height:
+normal'><b>Примеры:</b></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как добавить специальные эффекты к первой букве текста. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>h1<span class=GramE>:first</span>-letter </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>color</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>: #008080;</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-size</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>: xx-large</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;h1&gt;<span class=SpellE>Заголовок</span>&lt;/h1&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/body&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/html&gt;</span></p>
+  <p class=MsoListParagraph style='
+line-height:normal;'><span
+style='"Times New Roman"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>В
+    примере показано, как добавить специальные эффекты к первой строке текста. </p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>html</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>head</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;style type=&quot;text/<span
+class=SpellE>css</span>&quot;&gt;</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>p:</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>first-line </span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>{</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>color</span></span><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'>: #808000;</span></p>
+  <p style='line-height:
+normal'><span class=GramE><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>font-variant</span></span><span
+lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:#C00000;
+'>: normal</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>}</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/style&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;/head&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;<span class=GramE>body</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>&lt;p&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Пример</span><span
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>использования</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'> </span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>псевдо</span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>-</span><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>элемента</span><span class=GramE><span lang=EN-US
+style='font-family:"Century Gothic","sans-serif";color:#C00000;'> :</span></span><span lang=EN-US style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000;'>first-line.&lt;<span class=SpellE>br</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>Следующая
+    строка в параграфе.</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>p</span>&gt;</span></p>
+  <p style='line-height:
+normal'><span style='font-family:"Century Gothic","sans-serif";color:#C00000'>&lt;/<span
+class=SpellE>body</span>&gt;</span></p>
+  <p><span style='font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;
+color:#C00000'>&lt;/<span class=SpellE>html</span>&gt;</span></p>
+</div>
+</body>
+</html>

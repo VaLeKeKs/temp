@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Документ Без Имени</title>
+</head>
+
+<body bgcolor="#CC9966">
+<p align="center"><strong>Разметка страниц с помощью  блоков (</strong><strong>DIV) и </strong><strong>CSS. Позиционирование.</strong><br />
+   <strong>Как это делается</strong></p>
+<p>Тэг &lt;DIV&gt;  - служит для группирования элементов в блок.<br />
+  К сгруппированным элементам можно применить стили.<br />
+  Посмотрим на примерах, как это делается:</p>
+<p><strong>Примеры. Выделение блока  бордюром</strong></p>
+<p>Границу можно легко разместить вокруг заголовка, списка, абзаца или    их группы, поместив их в элемент div. Прописываем стили для этого блока. Это можно использовать с разметкой следующим образом:</p>
+<div style="border-color:black; border-style:dotted; ">
+    <p>Содержимое этого элемента DIV будет заключено в прерывистую рамку.
+div style="border-color:black; border-style:dotted;" </p></td>
+      <p>&nbsp;</p>
+</div>
+<br><br />
+<div style="border:15px double #008000; ">
+  <p>Содержимое этого элемента DIV будет заключено в сплошную рамку шириной 15 пикселов.
+div style="border:15px double #008000; "</p></td>
+    
+  <p>&nbsp;  </p>
+</div><br /><br />
+
+
+<div style="border-style: outset; border-color: #FF0000">
+ <p>Содержимое этого элемента DIV будет заключено в такую рамку.div style="border-style: outset; border-color: #FF0000"</p></td>
+    </div><br /><br />
+
+
+<div style="border-right: 10px solid #00FF00; border-bottom: 10px solid #00FF00">
+  
+    <p>Содержимое этого элемента DIV будет заключено в такую рамку.
+  <p>&lt;div    style=&quot;border-right: 10px solid #00FF00; border-bottom: 10px solid    #00FF00&quot;&gt;</p></td>
+   </div><br /><br />
+
+
+<div style="border-left: 20px solid #FFFF00; border-right: 20px solid #FFFF00">
+      <p>Содержимое этого элемента DIV будет заключено в такую рамку.
+div style="border-left: 20px solid #FFFF00; border-right: 20px solid #FFFF00"</p></td>
+   </div><br /><br />
+
+
+
+<p><strong>Пример. Выделение блока цветом  фона</strong></p><br />
+<div style="background-color: #00FFFF">
+  <p>Содержимое этого элемента DIV будет выделено таким цветом.
+div style="background-color: #00FFFF"</p></td>
+   
+</div><br />
+<p><strong>Пример. Позиционирование и  задание размеров</strong></p><br />
+<br />
+
+<div style="background-color: #AAAAFF">
+ <p>Содержимое этого элемента DIV будет позиционироваться здесь.div style="background-color: #AAAAFF"</p></td>
+    </div>
+<br />
+
+<p><strong>Примеры. Управление  переполнением и видимостью.</strong></p>
+<p>При переполнении следующего блока:<br />
+  &lt;div style=&quot;width: 200; height: 200; background-color:  #00FFFF&quot;&gt;<br />
+  &lt;/div&gt;<br />
+  блок будет увеличиваться (т.е. также как и таблица).</p>
+<p><img width="328" height="218" src="../теория для CSS/Лаба 2.files/image002.jpg" /></p>
+<p>При переполнении следующего блока:<br />
+&lt;div style=&quot;<strong>overflow:  auto</strong>; width: 200; height: 200; background-color: #00FFFF&quot;&gt;<br />
+&lt;/div&gt;<br />
+блок не будет увеличиваться, информацию можно просмотреть с помощью прокрутки</p>
+<p><img width="328" height="218" src="../теория для CSS/Лаба 2.files/image004.jpg" /></p>
+<p>При переполнении следующего блока:<br />
+&lt;div style=&quot;<strong>overflow: hidden</strong>; width: 200; height:  200; background-color: #00FFFF&quot;&gt;<br />
+&lt;/div&gt;<br />
+блок не будет увеличиваться, информация, не поместившаяся в блок, не  будет отображена.</p>
+<ol>
+  <li><strong>Пример  в котором показано, как задать стиль для четырех сторон границы.</strong></li>
+</ol>
+<p>&lt;html&gt;<br />
+  &lt;head&gt;<br />
+  &lt;style  type=&quot;text/css&quot;&gt;<br />
+  pre.inset  {border-style: inset}<br />
+  li.outset  {border-style: outset}<br />
+  h1.dotted  {border-style: dotted}<br />
+  h2.dashed  {border-style: dashed}<br />
+  h3.solid  {border-style: solid}<br />
+  h4.double {border-style:  double}<br />
+  h5.groove  {border-style: groove}<br />
+  h6.ridge  {border-style: ridge}<br />
+  &lt;/style&gt;<br />
+  &lt;/head&gt;<br />
+  &lt;body&gt;<br />
+  &lt;pre  class=&quot;inset&quot;&gt;рамка inset &lt;/pre&gt;<br />
+  &lt;ol&gt;<br />
+  &lt;li  class=&quot;outset&quot;&gt;рамка outset&lt;/li&gt;<br />
+  &lt;li  class=&quot;outset&quot;&gt;рамка outset&lt;/li&gt;<br />
+  &lt;li  class=&quot;outset&quot;&gt;рамка outset&lt;/li&gt;<br />
+  &lt;/ol&gt;<br />
+  &lt;h1  class=&quot;dotted&quot;&gt;рамка dotted&lt;/h1&gt;<br />
+  &lt;h2  class=&quot;dashed&quot;&gt;рамка dashed&lt;/h2&gt;<br />
+  &lt;h3  class=&quot;solid&quot;&gt;рамка solid&lt;/h3&gt;<br />
+  &lt;h4  class=&quot;double&quot;&gt;рамка double&lt;/h4&gt;<br />
+  &lt;h5  class=&quot;groove&quot;&gt;рамка groove &lt;/h5&gt;<br />
+  &lt;h6  class=&quot;ridge&quot;&gt;рамка ridge&lt;/h6&gt;<br />
+  &lt;/body&gt;<br />
+  &lt;/html&gt;<br />
+  <u>Вот что получилось:</u></p>
+<p><img width="285" height="357" src="../теория для CSS/Лаба 2.files/image006.jpg" /></p>
+
+<p><br />
+  <br />
+</p>
+</body>
+</html>
